@@ -2,8 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProfileController;
-use App\Http\Controllers\ManajemenBarangController;
 use App\Http\Controllers\DaftarBarangController;
+use App\Http\Controllers\CekPersediaanController;
+use App\Http\Controllers\ManajemenBarangController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -25,9 +26,9 @@ Route::middleware('auth')->group(function () {
 
 Route::resource('manajemen_barang', ManajemenBarangController::class);
 
-
 Route::resource('daftar_barang', DaftarBarangController::class);
 
+Route::resource('cek_persediaan', CekPersediaanController::class);
 
 
 
