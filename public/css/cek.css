@@ -1,0 +1,88 @@
+/* Tampilan Umum */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    color: #2d3748;
+    text-align: left;
+    margin-top: 40px;
+}
+
+/* Tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #2b6cb0;
+    color: white;
+}
+
+td {
+    background-color: #fff;
+}
+
+/* Gambar pada Tabel */
+img {
+    max-width: 100px;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Barang dengan Stok di Bawah 80 - Alert Style */
+h2 + table {
+    background-color: #fce8e6; /* Background warna merah muda untuk memberi kesan alert */
+    border: 1px solid #e53e3e; /* Border merah */
+}
+
+h2 + table th {
+    background-color: #e53e3e;
+    color: white;
+}
+
+/* Pemberitahuan jika tidak ada data */
+p {
+    text-align: center;
+    color: #718096;
+    font-size: 16px;
+}
+
+/* Barang dengan Stok Sedikit */
+h2 + table {
+    background-color: red; /* Background warna kuning muda untuk memberi kesan stok sedikit */
+    border: 1px solid red; /* Border kuning */
+}
+
+h2 + table th {
+    background-color: red;
+    color: #2d3748;
+}
+
+/* Styling Tombol jika ada */
+button {
+    background-color: #3182ce;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2b6cb0;
+}
