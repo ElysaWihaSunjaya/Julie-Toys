@@ -27,7 +27,7 @@ class CekPersediaanController extends Controller
     {
         $request->validate([
             'name' => 'required',
-            'price' => 'required|numeric',
+            'price' => 'required|integer',
             'stock' => 'required|integer',
             'damaged_stock' => 'nullable|integer',
         ]);
@@ -48,7 +48,7 @@ class CekPersediaanController extends Controller
 
         $request->validate([
             'name' => 'required',
-            'price' => 'required|numeric',
+            'price' => 'required|integer',
             'stock' => 'required|integer',
             'damaged_stock' => 'nullable|integer',
         ]);
