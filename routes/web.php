@@ -28,7 +28,9 @@ Route::resource('manajemen_barang', ManajemenBarangController::class);
 
 Route::resource('daftar_barang', DaftarBarangController::class);
 
-Route::resource('cek_persediaan', CekPersediaanController::class);
+Route::get('/cek_persediaan', [CekPersediaanController::class, 'index'])->name('cek_persediaan.index');
+Route::get('/cek_persediaan/under80', [CekPersediaanController::class, 'under80'])->name('cek_persediaan.under80');
+
 
 
 

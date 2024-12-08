@@ -16,9 +16,9 @@
         </ul>
     </nav>
 
-    <h2>Jumlah Stok:</h2>
-    @if ($barangSedikit->isEmpty())
-        <p>Tidak ada stok barang.</p>
+    <h2>Barang dengan Stok di Bawah 80</h2>
+    @if ($barangDibawah80->isEmpty())
+        <p>Tidak ada barang dengan stok di bawah 80.</p>
     @else
         <table class="min-w-full bg-white border border-gray-300">
             <thead>
@@ -31,14 +31,14 @@
                 </tr>
             </thead>
             <tbody>
-                @foreach ($barangSedikit as $barang)
+                @foreach ($barangDibawah80 as $barang)
                     <tr>
                         <td class="px-4 py-2 border">{{ $barang->name }}</td>
                         <td class="px-4 py-2 border">
                             @if ($barang->image)
-                            <a href="{{ asset('images/'.$barang->image) }}" target="_blank">
-                                <img src="{{ asset('images/' . $barang->image) }}" alt="{{ $barang->name }}" style="max-width: 100px; height: auto;">
-                            </a>
+                                <a href="{{ asset('images/'.$barang->image) }}" target="_blank">
+                                    <img src="{{ asset('images/' . $barang->image) }}" alt="{{ $barang->name }}" style="max-width: 100px; height: auto;">
+                                </a>
                             @else
                                 <p>No Image</p>
                             @endif

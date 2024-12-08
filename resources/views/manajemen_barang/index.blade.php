@@ -1,7 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-<h1>Daftar Barang</h1><br>
 
 <!-- Link untuk menambah barang -->
 <a href="{{ route('manajemen_barang.create') }}" class="bg-blue-500 text-white p-2 rounded">Tambah Barang</a>

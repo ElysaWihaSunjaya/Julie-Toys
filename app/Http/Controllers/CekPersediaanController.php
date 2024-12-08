@@ -9,18 +9,14 @@ class CekPersediaanController extends Controller
 {
     public function index()
     {
-        // Barang dengan stok sedikit
         $barangSedikit = ManajemenBarang::orderBy('stock', 'asc')->get();
-
-        // Barang dengan stok di bawah 80
-        $barangDibawah80 = ManajemenBarang::where('stock', '<', 80)->orderBy('stock', 'asc')->get();
-
-        return view('cek_persediaan.index', compact('barangSedikit', 'barangDibawah80'));
+        return view('cek_persediaan.index', compact('barangSedikit'));
     }
 
-    public function create()
+    public function under80()
     {
-        return view('manajemen_barang.create');
+        $barangDibawah80 = ManajemenBarang::where('stock', '<', 80)->orderBy('stock', 'asc')->get();
+        return view('cek_persediaan.under80', compact('barangDibawah80'));
     }
 
     public function store(Request $request)
@@ -34,33 +30,5 @@ class CekPersediaanController extends Controller
 
         ManajemenBarang::create($request->all());
         return redirect()->route('manajemen_barang.index')->with('success', 'Barang berhasil ditambahkan.');
-    }
-
-    public function edit($id)
-    {
-        $barang = ManajemenBarang::findOrFail($id);
-        return view('manajemen_barang.edit', compact('barang'));
-    }
-
-    public function update(Request $request, $id)
-    {
-        $barang = ManajemenBarang::findOrFail($id);
-
-        $request->validate([
-            'name' => 'required',
-            'price' => 'required|integer',
-            'stock' => 'required|integer',
-            'damaged_stock' => 'nullable|integer',
-        ]);
-
-        $barang->update($request->all());
-        return redirect()->route('manajemen_barang.index')->with('success', 'Barang berhasil diperbarui.');
-    }
-
-    public function destroy($id)
-    {
-        $barang = ManajemenBarang::findOrFail($id);
-        $barang->delete();
-        return redirect()->route('manajemen_barang.index')->with('success', 'Barang berhasil dihapus.');
     }
 }

@@ -17,7 +17,7 @@
     @stack('scripts')
 </head>
 <body class="font-sans antialiased">
-    <div style="background-image: url('/images/bg.jpg'); background-size: cover; background-position: center; height: 100vh;">
+    <div style="background-image: url('/images/bg.webp'); background-size: cover; background-position: center; height: 100vh;">
         @include('layouts.navigation')
 
         <!-- Page Heading -->

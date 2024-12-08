@@ -1,7 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-<h1>Daftar Barang</h1>
 
 <!-- Filter Pencarian -->
 <form action="{{ route('daftar_barang.index') }}" method="GET">
