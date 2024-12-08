@@ -33,3 +33,7 @@
     <button type="submit" class="bg-blue-500 text-white p-2 rounded">Simpan</button>
 </form>
 @endsection
+
+@push('styles')
+    <link rel="stylesheet" href="{{ asset('css/tampilan.css') }}">
+@endpush

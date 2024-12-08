@@ -19,7 +19,9 @@
                 <div class="item-image">
                     <!-- Menampilkan gambar jika ada -->
                     @if ($item->image)
-                        <img src="{{ asset('images/'.$item->image) }}" alt="{{ $item->name }}" class="thumbnail" data-large="{{ asset('images/'.$item->image) }}">
+                        <a href="{{ asset('images/'.$item->image) }}" target="_blank">
+                            <img src="{{ asset('images/'.$item->image) }}" alt="{{ $item->name }}" class="thumbnail" data-large="{{ asset('images/'.$item->image) }}">
+                        </a>
                     @else
                         <p>No Image</p>
                     @endif

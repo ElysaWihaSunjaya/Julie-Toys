@@ -30,6 +30,7 @@
                     <!-- Menampilkan gambar produk -->
                     <td class="px-4 py-2 border">
                         @if($item->image)
+                            <a href="{{ asset('images/'.$item->image) }}" target="_blank">
                             <img src="{{ asset('images/' . $item->image) }}" alt="{{ $item->name }}" style="max-width: 100px; height: auto;">
                         @else
                             <p>No Image</p>

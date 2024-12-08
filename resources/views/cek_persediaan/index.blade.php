@@ -24,6 +24,7 @@
                         <td class="px-4 py-2 border">{{ $barang->name }}</td>
                         <td class="px-4 py-2 border">
                             @if ($barang->image)
+                                <a href="{{ asset('images/'.$item->image) }}" target="_blank">
                                 <img src="{{ asset('images/' . $barang->image) }}" alt="{{ $barang->name }}" style="max-width: 100px; height: auto;">
                             @else
                                 <p>No Image</p>
