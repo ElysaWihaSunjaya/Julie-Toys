@@ -40,5 +40,5 @@
 @endsection
 
 @push('styles')
-    <link rel="stylesheet" href="{{ asset('css/tampilan.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/Daftar.css') }}">
 @endpush

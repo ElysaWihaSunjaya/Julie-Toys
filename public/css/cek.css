@@ -2,8 +2,6 @@ body {
     font-family: 'Arial', sans-serif;
     background-color: #f4f4f9;
     color: #333;
-    margin: 0;
-    padding: 0;
 }
 
 h1,h2{
@@ -11,12 +9,6 @@ h1,h2{
     font-size: 20px;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
 }
 
 th, td {
@@ -43,11 +35,15 @@ img {
 h2 + table {
     background-color: #fce8e6;
     border: 1px solid #e53e3e;
+    margin-left: 2%;
+    width: auto;
 }
 
 h2 + table th {
     background-color: #e53e3e;
     color: white;
+    margin-left: 2%;
+    width: auto;
 }
 
 p {
@@ -64,17 +60,6 @@ h2 + table {
 h2 + table th {
     background-color: red;
     color: #2d3748;
-}
-
-button {
-    background-color: #3182ce;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s;
 }
 
 button:hover {

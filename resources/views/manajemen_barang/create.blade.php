@@ -1,9 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
-<h1>Tambah Barang</h1>
 
 <form action="{{ route('manajemen_barang.store') }}" method="POST" enctype="multipart/form-data">
+    <h1>Tambah Barang</h1>
     @csrf
     <div>
         <label for="name">Nama Barang:</label>
@@ -39,7 +39,7 @@
 @endsection
 
 @push('styles')
-    <link rel="stylesheet" href="{{ asset('css/tampilan.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/Manajemen.css') }}">
 @endpush
 @push('scripts')
     <script>

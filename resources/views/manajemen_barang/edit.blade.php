@@ -1,9 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
-<h1>Edit Barang</h1>
 
 <form action="{{ route('manajemen_barang.update', $manajemenBarang->id) }}" method="POST" enctype="multipart/form-data">
+    <h1>Edit Barang</h1>
     @csrf
     @method('PUT')
 
@@ -41,8 +41,9 @@
 @endsection
 
 @push('styles')
-    <link rel="stylesheet" href="{{ asset('css/tampilan.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/Manajemen.css') }}">
 @endpush
+
 @push('scripts')
     <script>
         function previewImage(event) {
