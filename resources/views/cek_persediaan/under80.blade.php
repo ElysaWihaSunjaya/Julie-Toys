@@ -20,7 +20,7 @@
     @if ($barangDibawah80->isEmpty())
         <p>Tidak ada barang dengan stok di bawah 80.</p>
     @else
-        <table class="min-w-full bg-white border border-gray-300">
+        <table>
             <thead>
                 <tr>
                     <th class="px-4 py-2 border">Nama</th>
