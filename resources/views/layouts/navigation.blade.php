@@ -27,7 +27,7 @@
                     </x-nav-link>
 
                     <!-- Cek Persediaan -->
-                    <x-nav-link :href="route('cek_persediaan.index')" :active="request()->routeIs('daftar_barang.index')">
+                    <x-nav-link :href="route('cek_persediaan.index')" :active="request()->routeIs('cek_persediaan.index')">
                         {{ __('Cek Persediaan') }}
                     </x-nav-link>
                 </div>

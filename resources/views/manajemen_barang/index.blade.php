@@ -7,7 +7,7 @@
 @if ($items->isEmpty())
     <p>Tidak ada produk yang tersedia.</p><br>
 @else
-    <table class="min-w-full bg-white border border-gray-300">
+    <table>
         <thead>
             <tr>
                 <th class="px-4 py-2 border">Nama</th>
