@@ -17,9 +17,11 @@
                     </x-nav-link>
 
                     <!-- Manajemen Barang -->
+                    @if(auth()->user()->isadmin())
                     <x-nav-link :href="route('manajemen_barang.index')" :active="request()->routeIs('manajemen_barang.index')">
                         {{ __('Manajemen Barang') }}
                     </x-nav-link>
+                    @endif
 
                     <!-- Daftar Barang -->
                     <x-nav-link :href="route('daftar_barang.index')" :active="request()->routeIs('daftar_barang.index')">
@@ -27,9 +29,11 @@
                     </x-nav-link>
 
                     <!-- Cek Persediaan -->
+                    @if(auth()->user()->isadmin())
                     <x-nav-link :href="route('cek_persediaan.index')" :active="request()->routeIs('cek_persediaan.index')">
                         {{ __('Cek Persediaan') }}
                     </x-nav-link>
+                    @endif
                 </div>
             </div>
 
@@ -87,9 +91,11 @@
         </x-responsive-nav-link>
 
         <!-- Manajemen Barang -->
+        @if(auth()->user()->isadmin())
         <x-responsive-nav-link :href="route('manajemen_barang.index')">
             {{ __('Manajemen Barang') }}
         </x-responsive-nav-link>
+        @endif
 
         <!-- Daftar Barang -->
         <x-responsive-nav-link :href="route('daftar_barang.index')">
@@ -97,9 +103,11 @@
         </x-responsive-nav-link>
 
         <!-- Cek Persediaan -->
+        @if(auth()->user()->isadmin())
         <x-responsive-nav-link :href="route('cek_persediaan.index')">
             {{ __('Cek Persediaan') }}
         </x-responsive-nav-link>
+        @endif
     </div>
 
     <!-- Responsive Settings Options -->

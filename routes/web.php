@@ -24,8 +24,8 @@ Route::resource('manajemen_barang', ManajemenBarangController::class)->middlewar
 
 Route::resource('daftar_barang', DaftarBarangController::class);
 
-Route::get('/cek_persediaan', [CekPersediaanController::class, 'index'])->middleware('role:admin')->name('cek_persediaan.index');
-Route::get('/cek_persediaan/under80', [CekPersediaanController::class, 'under80'])->middleware('role:admin')->name('cek_persediaan.under80');
+Route::resource('/cek_persediaan', [CekPersediaanController::class, 'index'])->middleware('role:admin')->name('cek_persediaan.index');
+Route::resource('/cek_persediaan/under80', [CekPersediaanController::class, 'under80'])->middleware('role:admin')->name('cek_persediaan.under80');
 
 
 
