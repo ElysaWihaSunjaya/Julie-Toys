@@ -5,6 +5,7 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\DaftarBarangController;
 use App\Http\Controllers\CekPersediaanController;
 use App\Http\Controllers\ManajemenBarangController;
+use App\Http\Middleware\RoleMiddleware;
 
 Route::get('/', function () {
     return view('welcome');
@@ -20,14 +21,13 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-Route::resource('manajemen_barang', ManajemenBarangController::class)->middleware('role:admin');
+Route::middleware(['auth'])->group(function () {
+    Route::resource('manajemen_barang', ManajemenBarangController::class)->middleware('role:admin');
+    Route::get('/cek_persediaan', [CekPersediaanController::class, 'index'])->name('cek_persediaan.index')->middleware('role:admin');
+    Route::get('/cek_persediaan/under80', [CekPersediaanController::class, 'under80'])->name('cek_persediaan.under80')->middleware('role:admin');
+});
 
 Route::resource('daftar_barang', DaftarBarangController::class);
 
-Route::resource('/cek_persediaan', [CekPersediaanController::class, 'index'])->middleware('role:admin')->name('cek_persediaan.index');
-Route::resource('/cek_persediaan/under80', [CekPersediaanController::class, 'under80'])->middleware('role:admin')->name('cek_persediaan.under80');
-
-
-
-
 require __DIR__.'/auth.php';
+
