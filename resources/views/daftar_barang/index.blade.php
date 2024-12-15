@@ -26,7 +26,7 @@
                 </div>
                 <div class="tru-product-card-info">
                     <div class="tru-product-card-price">
-                        <strong>Harga:</strong> {{ $item->price }}
+                        <strong>Harga:</strong> {{ number_format($item->price, 0, ',', '.') }}
                     </div>
                     <div class="item-stock">
                         <strong>Stok:</strong> {{ $item->stock }}

@@ -43,7 +43,7 @@
                                 <p>No Image</p>
                             @endif
                         </td>
-                        <td class="px-4 py-2 border">{{ $barang->price }}</td>
+                        <td class="px-4 py-2 border">{{ number_format($barang->price, 0, ',', '.') }}</td>
                         <td class="px-4 py-2 border">{{ $barang->stock }}</td>
                         <td class="px-4 py-2 border">{{ $barang->damaged_stock ?? '-' }}</td>
                     </tr>

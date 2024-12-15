@@ -32,7 +32,7 @@
                         @endif
                     </td>
 
-                    <td class="px-4 py-2 border">{{ $item->price }}</td>
+                    <td class="px-4 py-2 border">{{ number_format($item->price, 0, ',', '.') }}</td>
                     <td class="px-4 py-2 border">{{ $item->stock }}</td>
                     <td class="px-4 py-2 border">{{ $item->damaged_stock }}</td>
                     <td class="px-4 py-2 border">

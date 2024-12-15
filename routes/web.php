@@ -10,10 +10,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('beranda', function () {
-    return view('beranda.beranda');
-});
-
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
@@ -24,12 +20,12 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-Route::resource('manajemen_barang', ManajemenBarangController::class);
+Route::resource('manajemen_barang', ManajemenBarangController::class)->middleware('role:admin');
 
 Route::resource('daftar_barang', DaftarBarangController::class);
 
-Route::get('/cek_persediaan', [CekPersediaanController::class, 'index'])->name('cek_persediaan.index');
-Route::get('/cek_persediaan/under80', [CekPersediaanController::class, 'under80'])->name('cek_persediaan.under80');
+Route::get('/cek_persediaan', [CekPersediaanController::class, 'index'])->middleware('role:admin')->name('cek_persediaan.index');
+Route::get('/cek_persediaan/under80', [CekPersediaanController::class, 'under80'])->middleware('role:admin')->name('cek_persediaan.under80');
 
 
 
