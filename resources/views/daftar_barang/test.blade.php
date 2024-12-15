@@ -11,11 +11,12 @@
 @if ($items->isEmpty())
     <p>Tidak ada produk yang tersedia.</p>
 @else
-    <div class="items-container"> <!-- Kontainer dengan class flex -->
+    <div class="items-container">
         @foreach ($items as $item)
-            <div class="tru-product-card">
-                <div class="tru-product-card-title">{{ $item->name }}</div>
-                <div class="tru-product-card-image">
+            <div class="item">
+                <div class="item-name">{{ $item->name }}</div>
+                <div class="item-image">
+                    <!-- Menampilkan gambar jika ada -->
                     @if ($item->image)
                         <a href="{{ asset('images/'.$item->image) }}" target="_blank">
                             <img src="{{ asset('images/'.$item->image) }}" alt="{{ $item->name }}" class="thumbnail" data-large="{{ asset('images/'.$item->image) }}">
@@ -24,13 +25,11 @@
                         <p>No Image</p>
                     @endif
                 </div>
-                <div class="tru-product-card-info">
-                    <div class="tru-product-card-price">
-                        <strong>Harga:</strong> {{ $item->price }}
-                    </div>
-                    <div class="item-stock">
-                        <strong>Stok:</strong> {{ $item->stock }}
-                    </div>
+                <div class="item-price">
+                    <strong>Harga:</strong> {{ $item->price }}
+                </div>
+                <div class="item-stock">
+                    <strong>Stok:</strong> {{ $item->stock }}
                 </div>
             </div>
         @endforeach
