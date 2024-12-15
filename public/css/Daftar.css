@@ -63,6 +63,7 @@ form button:hover {
     font-weight: 600;
     line-height: normal;
     align-self: center;
+    font-family: 'Rubik', sans-serif;
 }
 
 .tru-product-card-info {
@@ -80,6 +81,7 @@ form button:hover {
     display: inline-block;
     width: 48%;
     text-align: left;
+    font-family: 'Rubik', sans-serif;
 }
 
 .pagination {
