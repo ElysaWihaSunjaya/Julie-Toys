@@ -5,16 +5,15 @@
 
 ## 1.1 Tujuan
 
-Dokumen Software Requirement Specification (SRS) merupakan dokumen spesifikasi perangkat lunak untuk membangun “Sistem Informasi Parenting”. Dokumen ini dibangun untuk memudahkan Dinas Perlindungan Anak memberikan informasi dan edukasi terkait Ilmu Parenting kepada calon orang tua dan para orang tua. Sehingga dokumen ini dapat dijadikan acuan teknis untuk membangun perangkat lunak “SISTEM INFORMASI PARENTING”.
+WEB ini merupakan WEB mengenai UMKM toko kembang api yang bernama Julie Toys. WEB ini dibuat dengan tujuan untuk menarik perhatian para pembeli, memudahkan pembeli dalam mengecek barang, memudahkan admin untuk mengubah dan menambah barang maupun stok dan harga.
 
 
 ## 1.2 Lingkup
-Sistem Informasi Parenting merupakan aplikasi yang kami bangun untuk mempermudah Dinas Perlindungan Anak dalam memberikan infromasi dan edukasi kepada para calon orang tua dan orang tua seputar Ilmu Parenting seperti perkembangan anak, kesehatan anak, pendidikan anak, kesejahteraan mental anak, dan lain-lainnya.
+WEB ini kami buat untuk memudahkan pembeli dalam mencari produk yang tersedia dan admin untuk mengelolah barangnya dengan mudah.
 
 ## 1.3 Akronim, singkatan, definisi
 | Istilah | Definisi |
 | ------ | ------ |
-|   SRS     |    Software Requirement Specification    |
 |    Login    | Digunakan untuk mengakses aplikasi       |
 |   Software Requirement Specification     | perangkat lunak yang akan dibuat dan sebagai penyembatani komunikasi pembuat dengan pengguna       |
 |    Use Case    | situasi dimana sistem anda digunakan untuk memenuhi satu atau lebih kebutuhan pemakaian anda       |
@@ -22,7 +21,9 @@ Sistem Informasi Parenting merupakan aplikasi yang kami bangun untuk mempermudah
 ## 1.4 Referensi
 Referensi yang digunakan dalam pengembangan perangkat lunak ini adalah :
 
--https://schoolofparenting.id/
+- https://www.toyskingdom.co.id/
+- https://www.toysrus.com/
+- https://www.kidzstation.co.id/?gad_source=1&gclid=CjwKCAiA0rW6BhAcEiwAQH28InEwsSVGhG11bxWBDmMEhYAJ4bZkFuEo9Ta5nItunPw03DVp9TK_MxoCDjEQAvD_BwE
 
 
 
@@ -31,7 +32,7 @@ Bab selanjutnya yaitu menjelaskan sistem yang di terapkan pada aplikasi. Menjela
 
 
 ## BAB II GAMBARAN UMUM
-Ilmu parenting merupakan ilmu yang sangat dibutuhkan para orang tua agar dapat melaksanakan tugas sebagai orang tua dengan baik dan benar, pada zaman era globalisasi perkembangan teknologi begitu sangat pesat, salah satunya ialah perkembangan teknologi di bidang software engineering dimana software engineering dapat digunakan dalam kehidupan sehari - hari .dalam studi kasus project ini kami menganalisis kebutuhan suatu Dinas Perlindungan Anak di Pekanbaru, kasus yang kami peroleh yaitu pembuatan informasi dan edukasi seputar parenting yang bisa diakses dimana saja dan kapan saja oleh para orang tua. Maka dari itu kami merancang Sebuah sistem informasi parenting, platform atau aplikasi yang dirancang untuk membantu orangtua dalam mengelola, mendidik, dan merawat anak-anak mereka. Sistem yang kami buat menyediakan  fitur dan fungsionalitas untuk membantu orangtua dalam mengatasi tugas-tugas sehari-hari yang terkait dengan mengasuh anak-anak mereka. Berikut akan kami jelaskan sistem software kami, pengunjung fungsi utama yaitu:
+WEB yang kami berisi kan produk yang terdapat pada UMKM Julie Toys. Para pengunjung dapat mengecek produk yang tersedia berserta harga dan stoknya. Admin dapat melakukan proses CRUD dalam mengatur produk. Admin juga dapat melihat stok yang dibawah 80. Berikut akan kami jelaskan sistem software kami, pengunjung fungsi utama yaitu:
 
 - View artikel parenting
 - View dokumentasi kegiatan
