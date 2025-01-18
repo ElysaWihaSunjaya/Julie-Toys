@@ -23,3 +23,6 @@ class DaftarBarangController extends Controller
         return view('daftar_barang.index', compact('items'));
     }
 }
+
+//test
+

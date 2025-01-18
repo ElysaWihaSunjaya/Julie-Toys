@@ -17,3 +17,6 @@ class ManajemenBarang extends Model
     ];
 }
 
+//test
+
+

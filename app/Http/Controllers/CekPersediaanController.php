@@ -19,3 +19,5 @@ class CekPersediaanController extends Controller
         return view('cek_persediaan.under80', compact('barangDibawah80'));
     }
 }
+
+//test

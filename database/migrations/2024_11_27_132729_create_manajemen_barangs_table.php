@@ -30,3 +30,5 @@ return new class extends Migration
         Schema::dropIfExists('manajemen_barangs'); // Ganti dengan nama tabel yang benar
     }
 };
+
+//test
