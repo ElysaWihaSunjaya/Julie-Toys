@@ -46,6 +46,7 @@ Julie Toys adalah toko mainan online yang dapat diakses melalui web. Sistem ini 
 
 ### 2.1.1 Antarmuka Sistem
 ![alt text](img-laporan/antarmuka Sistem.png?raw=true)
+
 - **Halaman Admin:**
   - Login dan register.
   - Tambah/edit/hapus produk.
