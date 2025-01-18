@@ -79,18 +79,22 @@ Julie Toys adalah toko mainan online yang dapat diakses melalui web. Sistem ini 
 | ![alt text](img-laporan/11.png?raw=true) Halaman  untuk menambahkan  FAQ yg baru|![alt text](img-laporan/12.png?raw=true) Halaman untuk melakukan proses pembelian suatu  produk yang akan menginputklan nama produknya,harga,tanggal pembelian,jumlah barang,total harga dan juga rating.
 |  |  |
 
-
-
 ### **2.1.3 Antarmuka perangkat keras**
 ![Antarmuka Perangkat Keras](https://github.com/ElysaWihaSunjaya/Julie-Toys/blob/549723d1f781326fe2b1c27f13474a6b1d3f1cb1/img-laporan/Antarmuka%20perangkat%20keras.png)
 
 Antarmuka perangkat keras yang digunakan untuk mengoperasikan Perangkat Lunak Sistem Parenting antara lain :
 
 PC / Laptop Untuk menjalankan Aplikasi ini.
-### 2.1.3 Antarmuka Perangkat Lunak
+### 2.1.4 Antarmuka Perangkat Lunak
 - Browser web modern (Chrome, Firefox, Safari, Edge).
 
-### 2.1.4 Operasi
+### 2.1.5 Antarmuka Komunikasi
+-  Antarmuka komunikasi yang digunakan untuk mengoperasikan Perangkat Lunak Sistem Informasi Parenting antara lain :
+- **PC** 
+- **wifi/Jaringan* 
+
+
+### 2.1.7 Operasi
 - **Login:** Untuk autentikasi pengguna.
 - **Input Data:** Untuk menambahkan informasi baru.
 - **Edit:** Untuk mengubah informasi.
@@ -99,8 +103,7 @@ PC / Laptop Untuk menjalankan Aplikasi ini.
 
 ### 2.2 Spesifikasi Kebutuhan Fungsional
 - **Admin Login:** 
-![Antarmuka Perangkat Keras](https://github.com/ElysaWihaSunjaya/Julie-Toys/blob/549723d1f781326fe2b1c27f13474a6b1d3f1cb1/img-laporan/Antarmuka%20perangkat%20keras.png)
-
+![Admin Login Use Case](https://github.com/ElysaWihaSunjaya/Julie-Toys/blob/64721acbe17dfc831e5dc3e63a7c1a043c42fb23/img-laporan/Admin%20Login%20Use%20Case_%20Login.png)
 - Autentikasi menggunakan username dan password.
 - **Manajemen Produk:** Admin dapat menambah, mengedit, atau menghapus produk.
 ![Admin Input Produk](https://github.com/ElysaWihaSunjaya/Julie-Toys/blob/3ab96195ea3d65858e5d4350fbf7c0430997bd6c/img-laporan/Admin%20Input%20Produk.png)
@@ -124,6 +127,9 @@ PC / Laptop Untuk menjalankan Aplikasi ini.
 ### 3.1 Kebutuhan Fungsional
 
 Kebutuhan fungsional sistem Julie Toys mencakup berbagai fitur yang harus ada untuk mendukung operasional aplikasi e-commerce dalam jual beli mercun secara online. Fitur-fitur ini bertujuan untuk memberikan pengalaman pengguna yang optimal dan efisien. Adapun kebutuhan fungsional yang harus ada dalam sistem ini meliputi:
+![Pengunjung Mengunjungi Website Use Case](https://github.com/ElysaWihaSunjaya/Julie-Toys/blob/64721acbe17dfc831e5dc3e63a7c1a043c42fb23/img-laporan/pengunjung%20Mengunjungi%20website%20Use%20Case_%20Mengunjungi%20website.png)
+Deskripsi Singkat
+pengunjung mengunjungi website dan melihat informasi yang ada pada website seperti informasi seputar website serta informasi parenting yang telah tersedia, pengunjung juga dapat memberikan komentar pada konten parenting yang tersedia
 
 1. **Manajemen Pengguna:**
    - Pengguna dapat membuat akun, login, dan logout dari aplikasi.
