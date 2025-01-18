@@ -334,28 +334,29 @@ BAB 2
   2.7 -> jihanz
 
 BAB 3 
-
-    3.1 hasbi
-    
-    3.2 hasbi
+  
+  3.1 -> hasbi
+  
+  3.2 ->  hasbi
+  
 
 BAB 4
 
-    4.1 hasbi
+ 4.1 ->hasbi
     
-    4.2 hasbi
+ 4.2 -> hasbi
 
 BAB 5
 
-    5.1 hasbi
+5.1 -> hasbi
     
-    5.2 hasbi
+5.2 -> hasbi
 
 BAB 6
 
-    6.1 hasbi
+6.1 -> hasbi
     
-    6.2 hasbi
+6.2 -> hasbi
 
 Seluruh  Flow : Elysa
 
