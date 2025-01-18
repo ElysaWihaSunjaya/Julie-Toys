@@ -1,4 +1,3 @@
-<!-- resources/views/layouts/xapp.blade.php -->
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -7,60 +6,38 @@
     <title>@yield('title', 'Julie-Toys')</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        /* Custom Styling */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #f4f6f9;
         }
-
         .navbar {
             background-color: #007bff;
         }
-
         .navbar-brand, .nav-link {
             color: #fff !important;
         }
-
         .navbar-toggler-icon {
             background-color: #fff;
         }
-
-        footer {
-            background-color: #343a40;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-        }
-
         .container {
             margin-top: 30px;
         }
-
         .card {
             border: none;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
-
         .btn-primary, .btn-warning {
             transition: background-color 0.3s ease;
         }
-
         .btn-primary:hover {
             background-color: #0056b3;
         }
-
         .btn-warning:hover {
             background-color: #ff8c00;
         }
-
         .btn {
             border-radius: 8px;
         }
-
-        .footer-text {
-            color: #ddd;
-        }
-
         .product-img {
             height: 200px;
             object-fit: cover;
@@ -105,14 +82,14 @@
     </nav>
 
     <div class="container">
-        @yield('content') <!-- Konten halaman spesifik akan dimuat di sini -->
+        @yield('content')
     </div>
 
-    <footer>
-        <p class="footer-text">&copy; 2024 Julie-Toys - All rights reserved</p>
-    </footer>
+   @include('layouts.footer')
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    @stack('scripts') <!-- To include any scripts pushed to this section -->
 </body>
 </html>

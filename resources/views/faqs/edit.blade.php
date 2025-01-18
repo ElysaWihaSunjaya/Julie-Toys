@@ -1,7 +1,7 @@
 @extends('layouts.faqedit')
 
 @section('title', 'Edit FAQ - JULIE-TOYS')
-
+@include('layouts.header')
 @section('content')
     <h2 class="mb-4">Edit FAQ</h2>
 

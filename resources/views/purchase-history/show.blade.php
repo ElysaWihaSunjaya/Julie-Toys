@@ -1,6 +1,7 @@
 @extends('layouts.showhistory')
 
 @section('title', 'Detail Pembelian')
+@include('layouts.header')
 
 @section('content')
     <div class="card">

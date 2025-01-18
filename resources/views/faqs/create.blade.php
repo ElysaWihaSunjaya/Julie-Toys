@@ -1,7 +1,7 @@
 @extends('layouts.createfaq')
 
 @section('title', 'Tambah FAQ - JULIE-TOYS')
-
+@include('layouts.header')
 @section('content')
     <h2 class="mb-4">Tambah FAQ Baru</h2>
 

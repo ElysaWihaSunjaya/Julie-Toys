@@ -61,44 +61,31 @@
         .btn-danger {
             background-color: #dc3545;
         }
+        .card-body .form-control {
+    padding: 12px; /* Memberikan padding agar teks lebih leluasa */
+    height: 50px;  /* Menambah tinggi input */
+    font-size: 1rem; /* Menyesuaikan ukuran font agar lebih mudah dibaca */
+}
+
+.card-body .form-label {
+    font-size: 1.1rem; /* Membuat label sedikit lebih besar */
+}
+
+.card-body .mb-3 {
+    margin-bottom: 1.5rem; /* Memberikan jarak yang lebih besar antar form field */
+}
+
+
     </style>
 </head>
 <body>
 
-    <!-- Navbar / Menu Navigasi -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="#">Dashboard</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('purchase-history.index') }}">Riwayat Pembelian</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('purchase-history.create') }}">Tambah Pembelian</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('shop.index') }}">Produk</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('faqs.index') }}">FAQ</a>
-                    </li>
-                    <!-- Logout or other links can be added here -->
-                </ul>
-            </div>
-        </div>
-    </nav>
 
     <div class="container my-4">
         @yield('content')
     </div>
 
-    <footer>
-        <p class="footer-text">&copy; 2024 Julie-Toys - All rights reserved</p>
-    </footer>
+    @include('layouts.footer')
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>

@@ -1,7 +1,7 @@
-<!-- resources/views/purchase-history/edit.blade.php -->
 @extends('layouts.edithistory')
 
 @section('title', 'Edit Pembelian')
+@include('layouts.header')
 
 @section('content')
     <div class="card">
@@ -39,6 +39,12 @@
                 <div class="mb-3">
                     <label for="total_price_display" class="form-label">Total Harga</label>
                     <input type="text" class="form-control" id="total_price_display" value="Rp. {{ number_format($purchaseHistory->total_price, 2, ',', '.') }}" readonly>
+                </div>
+
+                <!-- Rating input -->
+                <div class="mb-3">
+                    <label for="rating" class="form-label">Rating</label>
+                    <input type="number" class="form-control" id="rating" name="rating" min="1" max="5" value="{{ old('rating', $purchaseHistory->rating) }}" required>
                 </div>
 
                 <button type="submit" class="btn btn-warning">Perbarui Pembelian</button>

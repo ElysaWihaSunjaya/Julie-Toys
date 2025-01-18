@@ -8,6 +8,7 @@
     <style>
         body {
             background-color: #f8f9fa;
+
         }
 
         .container {
@@ -17,7 +18,9 @@
         .card {
             border-radius: 8px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
         }
+
 
         .card-header {
             background-color: #007bff;
@@ -25,20 +28,25 @@
             font-weight: bold;
             border-top-left-radius: 8px;
             border-top-right-radius: 8px;
+
         }
 
         .form-control {
             border-radius: 4px;
             padding: 12px;
+            height: 70px
+
         }
 
         .table thead {
             background-color: #007bff;
             color: white;
+
         }
 
         .table td, .table th {
             vertical-align: middle;
+
         }
 
         .btn-sm {
@@ -64,34 +72,7 @@
 </head>
 <body>
 
-    <!-- Navbar / Menu Navigasi -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="#">Dashboard</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('purchase-history.create') }}">Tambah Pembelian</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('shop.index') }}">Shop</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('faqs.index') }}">FAQ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ url('/report/profit') }}">Laporan Keuntungan</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('member.dashboard') }}">Member Dashboard</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+
 
     <!-- Konten Halaman -->
     <div class="container my-4">
@@ -99,9 +80,7 @@
     </div>
 
     <!-- Footer -->
-    <footer>
-        <p class="footer-text text-center py-3">&copy; 2024 Julie-Toys - All rights reserved</p>
-    </footer>
+    @include('layouts.footer')
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>

@@ -10,9 +10,15 @@ class ProductController extends Controller
 {
     public function index()
     {
-        $products = Product::all();  // Mengambil semua produk dari database
-        return view('shop.index', compact('products'));  // Mengirim data produk ke view
+        // Ambil semua produk, dan tambahkan rata-rata rating untuk setiap produk
+        $products = Product::all()->map(function($product) {
+            $product->average_rating = $product->averageRating(); // Menambahkan rata-rata rating
+            return $product;
+        });
+
+        return view('shop.index', compact('products'));
     }
+
     // Menampilkan semua produk yang tersedia untuk dibeli online
     public function shop()
     {
@@ -39,11 +45,13 @@ class ProductController extends Controller
         $request->validate([
             'name' => 'required|string|max:255',
             'price' => 'required|numeric',
+            'stock' => 'required|integer',
+            'description' => 'nullable|string',
             'is_available_online' => 'required|boolean',
-            'image' => 'nullable|image|mimes:jpg,jpeg,png,gif|max:2048', // Validasi gambar
+            'image' => 'nullable|image|mimes:jpg,jpeg,png,gif|max:2048',
         ]);
 
-        // Jika ada file gambar yang diupload
+        // Menyimpan gambar jika ada yang diupload
         $imagePath = null;
         if ($request->hasFile('image')) {
             // Menyimpan gambar di folder 'public/products' dan mengambil path-nya
@@ -54,13 +62,16 @@ class ProductController extends Controller
         Product::create([
             'name' => $request->name,
             'price' => $request->price,
+            'stock' => $request->stock,
+            'description' => $request->description,
             'is_available_online' => $request->is_available_online,
-            'image' => $imagePath, // Simpan path gambar
+            'image' => $imagePath,
         ]);
 
         // Redirect ke halaman produk setelah berhasil menambah
         return redirect()->route('products.index');
     }
+
     public function edit($id)
     {
         $product = Product::findOrFail($id);
@@ -70,20 +81,23 @@ class ProductController extends Controller
     // Metode untuk memperbarui produk
     public function update(Request $request, $id)
     {
-        $product = Product::findOrFail($id);
-
-        // Validasi input (opsional)
+        // Validasi input
         $request->validate([
             'name' => 'required|string|max:255',
             'price' => 'required|numeric',
-            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
+            'description' => 'nullable|string',
+            'image' => 'nullable|image|mimes:jpg,jpeg,png,gif|max:2048',
         ]);
 
-        // Mengupdate data produk
-        $product->name = $request->name;
-        $product->price = $request->price;
+        // Temukan produk berdasarkan ID
+        $product = Product::findOrFail($id);
 
-        // Jika ada gambar yang diunggah, simpan gambar baru
+        // Update data produk
+        $product->name = $request->input('name');
+        $product->price = $request->input('price');
+        $product->description = $request->input('description');
+
+        // Jika ada gambar baru yang diupload
         if ($request->hasFile('image')) {
             // Hapus gambar lama jika ada
             if ($product->image && Storage::exists('public/' . $product->image)) {
@@ -95,9 +109,12 @@ class ProductController extends Controller
             $product->image = $imagePath;
         }
 
+        // Simpan perubahan
         $product->save();
 
-        return redirect()->route('shop.index')->with('success', 'Produk berhasil diperbarui');
+        // Redirect ke halaman produk setelah update
+        return redirect()->route('shop.show', $product->id)->with('success', 'Produk berhasil diperbarui!');
     }
+
 
 }

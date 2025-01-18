@@ -7,122 +7,71 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
-            background-color: #f8f9fa;
+            background-color: #f8f9fa; /* Latar belakang terang */
+            font-family: Arial, sans-serif;
         }
 
         .container {
-            max-width: 1200px;
+            max-width: 1100px; /* Lebar kontainer */
         }
 
+
+        /* FAQ Card Styling */
         .card {
-            border-radius: 8px;
+            border: none;
+            border-radius: 12px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
-
         .card-header {
             background-color: #007bff;
             color: white;
+            font-size: 16px;
             font-weight: bold;
-            border-top-left-radius: 8px;
-            border-top-right-radius: 8px;
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
         }
-
-        .form-control {
-            border-radius: 4px;
-            padding: 12px;
-        }
-
-        .table thead {
-            background-color: #007bff;
-            color: white;
-        }
-
-        .table td, .table th {
-            vertical-align: middle;
-        }
-
-        .btn-sm {
+        .card-body {
             font-size: 14px;
         }
 
-        .table-bordered td, .table-bordered th {
-            border: 1px solid #dee2e6;
+        /* Button Styling */
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
         }
-
-        .btn-info {
-            background-color: #17a2b8;
+        .btn-primary:hover {
+            background-color: #0056b3;
         }
-
         .btn-warning {
             background-color: #ffc107;
+            border-color: #ffc107;
+            color: #212529;
+        }
+        .btn-warning:hover {
+            background-color: #e0a800;
+        }
+        .btn-danger:hover {
+            background-color: #c82333;
         }
 
-        .btn-danger {
-            background-color: #dc3545;
-        }
+        /* Footer Styling */
 
-        /* Custom Styling for Navbar */
-        .navbar {
-            background-color: #007bff; /* Warna biru */
-        }
-        .navbar-brand, .navbar-nav .nav-link {
-            color: white !important; /* Warna teks putih */
-        }
-        .navbar-nav .nav-link:hover {
-            color: #c8d6e5 !important; /* Warna hover teks */
-        }
 
-        footer {
-            background-color: #007bff; /* Warna biru footer */
-            color: white;
-            text-align: center;
-            padding: 10px;
-        }
     </style>
 </head>
 <body>
 
-    <!-- Navbar / Menu Navigasi -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container">
-            <a class="navbar-brand" href="#">Dashboard</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('purchase-history.create') }}">Tambah Pembelian</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('shop.index') }}">Shop</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('faqs.index') }}">FAQ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ url('/report/profit') }}">Laporan Keuntungan</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('member.dashboard') }}">Member Dashboard</a>
-                    </li>
 
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Konten Halaman -->
+    <!-- Main Content -->
     <div class="container my-4">
         @yield('content')
     </div>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Julie-Toys - All rights reserved</p>
-    </footer>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Include Footer -->
+    @include('layouts.footer')
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

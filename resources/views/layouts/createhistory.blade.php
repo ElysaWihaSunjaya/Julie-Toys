@@ -8,15 +8,18 @@
     <style>
         body {
             background-color: #f8f9fa;
+            height: 500px;
         }
 
         .container {
-            max-width: 1200px;
+            max-width: 1400px;
+
         }
 
         .card {
             border-radius: 8px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
         }
 
         .card-header {
@@ -25,11 +28,13 @@
             font-weight: bold;
             border-top-left-radius: 8px;
             border-top-right-radius: 8px;
+
         }
 
         .form-control {
             border-radius: 4px;
             padding: 12px;
+            height: 70px;
         }
 
         .table thead {
@@ -60,47 +65,62 @@
         .btn-danger {
             background-color: #dc3545;
         }
+
+        footer {
+            background-image: url('{{ asset('image/footerapik.jpeg') }}');
+            background-size: 100% 100%; /* Gambar akan menutupi seluruh area footer tanpa terpotong */
+            background-position: center;
+            background-repeat: no-repeat; /* Menghindari pengulangan gambar */
+            color: white;
+            text-align: center;
+            padding: 80px 15px; /* Menambah ruang teks agar tidak tertutup gambar */
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            min-height: 300px; /* Memberikan tinggi minimal footer */
+        }
+
+        footer h5 {
+            font-weight: bold;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: black; /* Mengubah warna link menjadi hitam */
+        }
+
+        footer .social-icons a {
+            margin: 0 10px;
+            color: black; /* Ikon sosial berwarna hitam */
+            font-size: 20px;
+        }
+
+        footer .social-icons a:hover {
+            color: #007bff; /* Mengubah warna ikon sosial saat di-hover menjadi biru */
+        }
+
+        footer .container {
+            position: relative;
+            z-index: 2;
+        }
+
+        footer h5, footer p, footer ul, footer .social-icons {
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        footer .social-icons a:hover {
+            color: #007bff;
+        }
     </style>
 </head>
 <body>
-
-    <!-- Navbar / Menu Navigasi -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="#">Dashboard</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('shop.index') }}">Produk</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ url('/report/profit') }}">Laporan Keuntungan</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('member.dashboard') }}">Member Dashboard</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('faqs.index') }}">FAQ</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
     <!-- Konten Halaman -->
     <div class="container my-4">
         @yield('content')
     </div>
 
     <!-- Footer -->
-    <footer>
-        <p class="footer-text text-center py-3">&copy; 2024 Julie-Toys - All rights reserved</p>
-    </footer>
+    @include('layouts.footer')
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>

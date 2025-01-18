@@ -36,7 +36,7 @@ class AuthenticatedSessionController extends Controller
             return redirect()->route('dashboard'); // Admin diarahkan ke dashboard
         }
 
-        return redirect()->route('members.index'); // Buyer diarahkan ke daftar members
+        return redirect()->route('dashboard'); // Buyer diarahkan ke daftar members
     }
 
     /**
@@ -89,6 +89,6 @@ class AuthenticatedSessionController extends Controller
             return redirect(route('dashboard')); // Admin diarahkan ke dashboard
         }
 
-        return redirect(route('members.index')); // Buyer diarahkan ke daftar members
+        return redirect(route('member.index')); // Buyer diarahkan ke daftar members
     }
 }

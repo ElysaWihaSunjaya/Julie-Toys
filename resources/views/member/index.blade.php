@@ -1,6 +1,6 @@
 <!-- resources/views/members/index.blade.php -->
 @extends('layouts.memberindex')
-
+@include('layouts.header')
 @section('content')
     <div class="bg-white shadow-md rounded-lg p-6">
         <h3 class="text-xl font-semibold mb-4">Daftar Member (Buyer)</h3>

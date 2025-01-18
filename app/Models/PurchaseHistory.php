@@ -15,17 +15,20 @@ class PurchaseHistory extends Model
     public $timestamps = true;
 
     // Kolom yang dapat diisi secara massal
+    // resources/models/PurchaseHistory.php
     protected $fillable = [
         'product_id',
         'purchase_date',
         'quantity',
         'total_price',
+        'rating', // Menambahkan kolom rating ke fillable
     ];
+
 
     // Relasi ke produk
     public function product()
     {
-        return $this->belongsTo(Product::class); // Relasi satu ke banyak dengan produk
+        return $this->belongsTo(Product::class);
     }
 
     // Menambahkan aksesors atau mutators jika diperlukan

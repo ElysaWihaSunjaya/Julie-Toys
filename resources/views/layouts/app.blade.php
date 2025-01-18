@@ -9,37 +9,22 @@
         .navbar-custom {
             background-color: #007bff; /* Warna biru */
         }
-        .footer-custom {
-            background-color: #343a40;
-            color: #ffffff;
-        }
-        .footer-custom a {
-            color: #007bff;
-            text-decoration: none;
-        }
-        .footer-custom a:hover {
-            text-decoration: underline;
-        }
+
     </style>
 </head>
 <body>
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-custom navbar-dark">
-        <a class="navbar-brand" href="{{ route('landing.index') }}">Toko Kami</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+        <span class="navbar-brand">JULIE-TOYS</span>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
+
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('landing.index') }}">Landing Page</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ route('products.index') }}">Daftar Barang</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ route('purchase-history.index') }}">Riwayat Pembelian</a>
+                    <a class="nav-link" href="{{ route('shop.index') }}">Produk</a>
                 </li>
 
                 <!-- Menambahkan menu login/logout berdasarkan status autentikasi -->
@@ -65,18 +50,40 @@
         </div>
     </nav>
 
+    <div id="carouselExampleIndicators" class="carousel slide my-4" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://cdn.ruparupa.io/filters:format(webp)/promotion/toyskingdom/update-new-category-ah/level-1/pgbanner-mainan-koleksi.png" class="d-block w-100" alt="Banner 1">
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.pexels.com/photos/163036/mario-luigi-yoschi-figures-163036.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="d-block w-100" alt="Banner 2">
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.pexels.com/photos/189530/pexels-photo-189530.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="d-block w-100" alt="Banner 3">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
     <!-- Main Content -->
     <div class="container mt-4">
         @yield('content')
     </div>
 
-    <!-- Footer -->
-    <footer class="footer-custom py-4 text-center">
-        <div class="container">
-            <p>&copy; 2024 Toko Kami. Semua Hak Dilindungi.</p>
-            <p>Temukan kami di <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a></p>
-        </div>
-    </footer>
+     <!-- Include Footer -->
+     @include('layouts.footer')
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
