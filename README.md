@@ -13,10 +13,26 @@ Sistem Informasi Julie Toys adalah aplikasi berbasis web yang menyediakan pengel
 - **Tambah Produk:** Admin dapat menambahkan produk baru.
 - **FAQ:** Halaman pertanyaan umum untuk pembeli dan admin.
 
+##1.3 Akronim, singkatan, definisi
+| Istilah | Definisi                                                               |
+|---------|------------------------------------------------------------------------|
+|  login  | Proses masuk ke akun dengan email/username dan password.               |
+| register| Proses membuat akun baru dengan mengisi data seperti nama dan email.   |
+| Use Case| Cara pengguna berinteraksi dengan sistem untuk mencapai tujuan.        |
+|   FAQ   | Daftar pertanyaan dan jawaban umum tentang layanan atau produk.        |
+
 ## BAB II Gambaran Umum
+Pada sistem Julie Toys, terdapat dua jenis pengguna: Admin dan Pembeli. Admin memiliki hak akses penuh terhadap sistem untuk mengelola produk, melihat laporan keuntungan, dan membuat laporan transaksi, sementara Pembeli dapat mengakses katalog produk dan melakukan pembelian, serta melihat riwayat pembelian mereka.
+
+Fitur utama yang ada dalam aplikasi adalah:
+- **Shop (Toko): Pengunjung (pembeli) dapat melihat produk mainan yang tersedia untuk dibeli.
+- **Riwayat Pembelian: Pembeli dapat memeriksa riwayat transaksi mereka.
+- **Laporan Keuntungan: Hanya admin yang dapat mengakses dan melihat laporan keuntungan yang dihasilkan oleh toko.
+- **Tambah Produk: Admin dapat menambah produk baru yang akan muncul di toko.
+- **FAQ: Halaman FAQ yang dapat diakses oleh admin dan pembeli untuk menjawab pertanyaan umum terkait produk dan transaksi.
 
 ### 2.1 Perspektif Produk
-Julie Toys memiliki dua jenis pengguna utama:
+Julie Toys adalah toko mainan online yang dapat diakses melalui web. Sistem ini memiliki dua jenis aktor utama:
 - **Admin:** Mengelola produk, memantau transaksi, dan melihat laporan keuntungan.
 - **Pembeli:** Membeli produk dan melihat riwayat pembelian mereka.
 
@@ -32,6 +48,7 @@ Julie Toys memiliki dua jenis pengguna utama:
   - Melihat produk.
   - Melakukan pembelian.
   - Mengakses riwayat pembelian dan halaman FAQ.
+
 
 ### **2.1.3 Antarmuka perangkat keras**
 ![alt text](Image/perangkatKeras.png?raw=true)
