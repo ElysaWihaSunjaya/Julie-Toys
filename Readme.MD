@@ -99,10 +99,15 @@ PC / Laptop Untuk menjalankan Aplikasi ini.
 
 ### 2.2 Spesifikasi Kebutuhan Fungsional
 - **Admin Login:** 
-https://github.com/ElysaWihaSunjaya/Julie-Toys/blob/549723d1f781326fe2b1c27f13474a6b1d3f1cb1/img-laporan/Admin%20Login%20Use%20Case_%20Login.png
+![Antarmuka Perangkat Keras](https://github.com/ElysaWihaSunjaya/Julie-Toys/blob/549723d1f781326fe2b1c27f13474a6b1d3f1cb1/img-laporan/Antarmuka%20perangkat%20keras.png)
+
 - Autentikasi menggunakan username dan password.
 - **Manajemen Produk:** Admin dapat menambah, mengedit, atau menghapus produk.
+![Admin Input Produk](https://github.com/ElysaWihaSunjaya/Julie-Toys/blob/3ab96195ea3d65858e5d4350fbf7c0430997bd6c/img-laporan/Admin%20Input%20Produk.png)
+
 - **Riwayat Pembelian:** Admin dan pembeli dapat melihat riwayat transaksi.
+![Admin Lihat Laporan Keuntungan](https://github.com/ElysaWihaSunjaya/Julie-Toys/blob/3ab96195ea3d65858e5d4350fbf7c0430997bd6c/img-laporan/Admin%20lihat%20laporan%20keuntungan.png)
+
 - **FAQ Management:** Admin dapat menambah atau mengedit FAQ.
 
 ### 2.3 Spesifikasi Kebutuhan Non-Fungsional
@@ -123,6 +128,7 @@ Kebutuhan fungsional sistem Julie Toys mencakup berbagai fitur yang harus ada un
 1. **Manajemen Pengguna:**
    - Pengguna dapat membuat akun, login, dan logout dari aplikasi.
    - Pengguna dapat memperbarui data profil, termasuk informasi pengiriman dan pembayaran.
+![Admin Daftar Member](https://github.com/ElysaWihaSunjaya/Julie-Toys/blob/3ab96195ea3d65858e5d4350fbf7c0430997bd6c/img-laporan/Admin%20daftar%20member.png)
    - Admin dapat mengelola data pengguna, termasuk hak akses (sebagai admin atau pelanggan).
 
 2. **Manajemen Produk:**
