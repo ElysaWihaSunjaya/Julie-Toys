@@ -110,7 +110,7 @@ tidak ada
 - **Riwayat Pembelian:** Admin dan pembeli dapat melihat riwayat transaksi.
 - **Daftar member:** Admin dapat melihat  dan menambahkan daftar member(buyer).
 - **Edit footer :** Admin dapat mengedit Footer.
-![Admin Edit Footer](https://github.com/ElysaWihaSunjaya/Julie-Toys/blob/787d9674ebb4de7fdd049c9d29dad400da027306/img-laporan/Admin%20edit%20footer.png)
+- ![Admin Edit Footer](https://github.com/ElysaWihaSunjaya/Julie-Toys/blob/787d9674ebb4de7fdd049c9d29dad400da027306/img-laporan/Admin%20edit%20footer.png)
 - **FAQ Management:** Admin dapat menambah atau mengedit FAQ.
 
 ### 2.3 Spesifikasi Kebutuhan Non-Fungsional
@@ -143,8 +143,8 @@ Salah satu cara mengakses website ini yaitu dengan registrasi, setelah registras
 
 Kebutuhan fungsional sistem Julie Toys mencakup berbagai fitur yang harus ada untuk mendukung operasional aplikasi e-commerce dalam jual beli mercun secara online. Fitur-fitur ini bertujuan untuk memberikan pengalaman pengguna yang optimal dan efisien. Adapun kebutuhan fungsional yang harus ada dalam sistem ini meliputi:
 
-![Pengunjung Mengunjungi Website Use Case](https://github.com/ElysaWihaSunjaya/Julie-Toys/blob/64721acbe17dfc831e5dc3e63a7c1a043c42fb23/img-laporan/pengunjung%20Mengunjungi%20website%20Use%20Case_%20Mengunjungi%20website.png)
-Deskripsi Singkat
+- ![Pengunjung Mengunjungi Website Use Case](https://github.com/ElysaWihaSunjaya/Julie-Toys/blob/64721acbe17dfc831e5dc3e63a7c1a043c42fb23/img-laporan/pengunjung%20Mengunjungi%20website%20Use%20Case_%20Mengunjungi%20website.png)
+- Deskripsi Singkat
 pengunjung mengunjungi website dan melihat informasi yang ada pada website seperti informasi seputar website serta informasi parenting yang telah tersedia, pengunjung juga dapat memberikan komentar pada konten parenting yang tersedia
 
 1. **Manajemen Pengguna:**
