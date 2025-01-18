@@ -314,7 +314,7 @@ Dengan sistem ini, diharapkan dapat meningkatkan kenyamanan, kecepatan, dan kemu
 - Perhitungan otomatis ongkos kirim.
 - Penambahan sistem diskon dan promo.
 
-## Pembagian tugas
+## Pembagian tugas Laporan
 BAB 1 -jihanz
   1.1 -> jihanz
   
@@ -369,7 +369,7 @@ BAB 6
 
 Seluruh  Flow : Elysa
 
-Pembagian Tugas  Projek
+### Pembagian Tugas  Projek
 - table : manajemen_barangs (elysa), pembelian online, daftar member, pengaturan dan bantuan,laporan keuntungan
 - crud manajemen barang, view daftar barang, cek persediaan barang (Elysa)
 - Crud Riwayat Pembelian, Pembelian Online, Pengaturan Dan Bantuan,View Beranda, (Hasbi)
