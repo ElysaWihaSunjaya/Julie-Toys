@@ -4,10 +4,13 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Auth\LoginRequest;
-use Illuminate\Http\RedirectResponse;
+use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\View\View;
+use Illuminate\Validation\Rules;
 
 class AuthenticatedSessionController extends Controller
 {
@@ -28,7 +31,12 @@ class AuthenticatedSessionController extends Controller
 
         $request->session()->regenerate();
 
-        return redirect()->intended(route('dashboard', absolute: false));
+        // Cek role pengguna setelah login dan arahkan
+        if (Auth::user()->role === 'admin') {
+            return redirect()->route('dashboard'); // Admin diarahkan ke dashboard
+        }
+
+        return redirect()->route('dashboard'); // Buyer diarahkan ke daftar members
     }
 
     /**
@@ -43,5 +51,44 @@ class AuthenticatedSessionController extends Controller
         $request->session()->regenerateToken();
 
         return redirect('/');
+    }
+
+    /**
+     * Display the register view.
+     */
+    public function createRegister(): View
+    {
+        return view('auth.register'); // Tampilan untuk form register
+    }
+
+    /**
+     * Handle the registration of a new user.
+     */
+    public function storeRegister(Request $request): RedirectResponse
+    {
+        // Validasi input pengguna untuk register
+        $request->validate([
+            'name' => ['required', 'string', 'max:255'],
+            'email' => ['required', 'email', 'unique:users'],
+            'password' => ['required', 'confirmed', Rules\Password::defaults()],
+        ]);
+
+        // Buat pengguna baru
+        $user = User::create([
+            'name' => $request->name,
+            'email' => $request->email,
+            'password' => Hash::make($request->password), // Mengamankan password
+            'role' => 'buyer', // Role default untuk registrasi
+        ]);
+
+        // Login otomatis setelah pendaftaran
+        Auth::login($user);
+
+        // Redirect berdasarkan role pengguna
+        if ($user->role === 'admin') {
+            return redirect(route('dashboard')); // Admin diarahkan ke dashboard
+        }
+
+        return redirect(route('member.index')); // Buyer diarahkan ke daftar members
     }
 }
