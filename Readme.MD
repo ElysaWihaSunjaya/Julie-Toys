@@ -54,20 +54,19 @@ Julie Toys adalah toko mainan online yang dapat diakses melalui web. Sistem ini 
 **Halaman Admin**
 |  |  |
 |--|--|
-| ![alt text](img-laporan/1.png?raw=true) halaman login admin diminta untuk mengisi username dan password.| ![alt text](img-laporan/2.png?raw=true) Setelah login admin akan masuk ke tampilan Dashboard admin.
+| ![alt text](img-laporan/1.png?raw=true) Halaman utama laravel untuk melakukan tahap login  dan juga register.| ![alt text](img-laporan/2.png?raw=true)Halaman login untuk mengisi email dan password yg digunakan untuk mengakses halaman.
 |  |  |
-| ![alt text](img-laporan/3.png?raw=true) Pada halaman admin akan terdapat halaman unutk mengelola data kegiatan, namun tidak hanya dat kegiatan tapi admin juga dapat mengelola data artikel, data kontak, data about dan data team dengan tamnpilan yang sama di halaman yang berbeda.| ![alt text](img-laporan/4.png?raw=true) Pada halaman mengelola data kegiatan, admin juga dapat menambahkan data kegiatan, begitu juga dengan pengelolaan data di tabel lainnya.
+| ![alt text](img-laporan/3.png?raw=true)Halaman utama yang menampilkan keterangan toko dan  juga lokasi toko dan juga navigasi untuk pindah ke halaman lainnya.| ![alt text](img-laporan/4.png?raw=true) halaman produk yang akan menampilkan seluruh produk yg dijual beserta harganya.
 |  |  |
-| ![alt text](img-laporan/5.png?raw=true) Pada halaman mengelola data kegiatan juga terdapat aksi untuk mengedit data kegiatan.|![alt text](img-laporan/6.png?raw=true) Pada halaman mengelola data kegiatan, selain menambahkan dan mengedit, admin juga dapat menghapus data kegiatan yang mana ketika button hapus di klik akan muncul pop up untuk memastikan admin benar-benar ingin menghapus atau tidak.
+| ![alt text](img-laporan/5.png?raw=true) Halaman detail produk yang berisikan nama produk,harga,dan  juga deskripsi produk lainnya.|![alt text](img-laporan/6.png?raw=true) Halaman untuk admin menambahkan produk baru yang akan dijual,dan terdapat kolom untuk menginputkan nama produk, harga, stok  barang, ketersediaan  barang, gambar dan juga deskkripsi produk.
 |  |  |
 |--|--|
-| ![alt text](img-laporan/7.png) Pada halaman pengunjung terdapat beranda yang berisi tampilan scrolling yang berisi seluruh konten seperti tampilan home, kegiatan, artikel about ,team dan contact.|![alt text](img-laporan/8.png?raw=true) Pada halaman pengunjung terdapat halaman kegiatan yang berisi judul, gambar, tanggal dan deskripsi kegiatan.
+| ![alt text](img-laporan/7.png)Halaman laporan keuntungan yang menampilkan total keuntungan yang  didapatkan  beserta detail pembelian setiap produknya.|![alt text](img-laporan/8.png?raw=true) Halaman riwayat pembelian yang menampilkan list produk yang sudah terjual, dan admin dapat melihat, edit, dan juga hapus detail  produk.
 |  |  |
-| ![alt text](img-laporan/9.png?raw=true) Pada halaman pengunjung terdapat halaman lanjutan Kegiatan, jika pengunjung telah mengklik satu kegiatan yang akan dilihat, maka pada halaman ini akan tampil deskripsi dari kegiatan tersebut.|![alt text](img-laporan/10.png?raw=true) Pada halaman pengunjung terdapat halaman artikel yang berisi cover dan deskripsi singkat mengenai artikel.
+| ![alt text](img-laporan/9.png?raw=true)Halaman daftar member yg berisikan list akun pembeli.|![alt text](img-laporan/10.png?raw=true) Halaman  Faq (frequently asked question)berisikan pertanyaan2 dari pembeli yg ditanyakan kepada admin.
 |  |  |
-| ![alt text](img-laporan/11.png?raw=true) Pada halaman pengunjung terdapat halaman lanjutan Artikel jika pengunjung telah mengklik satu judul yang akan dibaca, maka pada halaman ini akan tampil deskripsi dari artikel tersebut, pada halaman ini pengunjung dapat meninggalkan komentar.|![alt text](img-laporan/12.png?raw=true) Pada halaman pengunjung terdapat halaman about yang berisi informasi website seputar pengelola.
+| ![alt text](img-laporan/11.png?raw=true) Halaman  untuk menambahkan  FAQ yg baru|![alt text](img-laporan/12.png?raw=true) Halaman untuk melakukan proses pembelian suatu  produk yang akan menginputklan nama produknya,harga,tanggal pembelian,jumlah barang,total harga dan juga rating.
 |  |  |
-| ![alt text](revisi/kontak.png?raw=true) Pada halaman pengunjung terdapat halaman about yang berisi informasi website seputar Alamat dan Contact Person.|![alt text](revisi/team.png?raw=true) Pada halaman pengunjung terdapat halaman team yang berisi team dari dinas pemberdayaan perempuan dan Perlindungan anak masyarakat kota pekanbaru.
 
 
 
