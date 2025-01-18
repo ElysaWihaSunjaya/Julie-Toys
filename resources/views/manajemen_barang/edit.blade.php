@@ -1,9 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
-<h1>Edit Barang</h1>
 
 <form action="{{ route('manajemen_barang.update', $manajemenBarang->id) }}" method="POST" enctype="multipart/form-data">
+    <h1>Edit Barang</h1>
     @csrf
     @method('PUT')
 
@@ -14,13 +14,11 @@
 
     <div>
         <label for="image">Gambar Barang:</label>
-        <input type="file" name="image" id="image" accept="image/*">
-        @if($manajemenBarang->image)
-            <div>
-                <p>Gambar Saat Ini:</p>
-                <img src="{{ asset('images/' . $manajemenBarang->image) }}" alt="Image" style="max-width: 200px;">
-            </div>
-        @endif
+        <input type="file" name="image" id="image" accept="image/*" onchange="previewImage(event)">
+
+        <div id="imagePreviewContainer">
+            <img id="imagePreview" src="#" alt="Image Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+        </div>
     </div>
 
     <div>
@@ -41,3 +39,26 @@
     <button type="submit" class="bg-blue-500 text-white p-2 rounded">Update</button>
 </form>
 @endsection
+
+@push('styles')
+    <link rel="stylesheet" href="{{ asset('css/Manajemen.css') }}">
+@endpush
+
+@push('scripts')
+    <script>
+        function previewImage(event) {
+            const file = event.target.files[0];
+            const reader = new FileReader();
+
+            reader.onload = function(e) {
+                const imagePreview = document.getElementById('imagePreview');
+                imagePreview.src = e.target.result;
+                imagePreview.style.display = "block"; // Menampilkan gambar preview setelah dipilih
+            }
+
+            if (file) {
+                reader.readAsDataURL(file);
+            }
+        }
+    </script>
+@endpush
