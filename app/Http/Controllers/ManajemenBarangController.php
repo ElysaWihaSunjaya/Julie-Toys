@@ -118,6 +118,5 @@ class ManajemenBarangController extends Controller
     }
 }
 
-//test
 
 

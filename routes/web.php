@@ -31,4 +31,3 @@ Route::resource('daftar_barang', DaftarBarangController::class);
 
 require __DIR__.'/auth.php';
 
-//test

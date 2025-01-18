@@ -20,4 +20,3 @@ class CekPersediaanController extends Controller
     }
 }
 
-//test

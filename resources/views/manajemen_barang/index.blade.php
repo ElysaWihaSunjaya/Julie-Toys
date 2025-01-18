@@ -58,4 +58,3 @@
     <link rel="stylesheet" href="{{ asset('css/Index.css') }}">
 @endpush
 
-//test

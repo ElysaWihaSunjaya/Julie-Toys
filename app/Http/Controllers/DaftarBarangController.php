@@ -24,5 +24,4 @@ class DaftarBarangController extends Controller
     }
 }
 
-//test
 

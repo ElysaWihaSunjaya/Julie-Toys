@@ -57,4 +57,3 @@
     <link rel="stylesheet" href="{{ asset('css/cek.css') }}">
 @endpush
 
-//test
