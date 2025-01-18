@@ -346,8 +346,8 @@ BAB 3
 
 3.3 XXX
 
-Pembagian tugas:
--table : manajemen_barangs (elysa), pembelian online, daftar member, pengaturan dan bantuan,laporan keuntungan
--crud manajemen barang, view daftar barang, cek persediaan barang (Elysa)
--Crud Riwayat Pembelian, Pembelian Online, Pengaturan Dan Bantuan,View Beranda, (Hasbi)
--Crud laporan keuntungan, daftar member,Login Admin(jihanz)
+
+- table : manajemen_barangs (elysa), pembelian online, daftar member, pengaturan dan bantuan,laporan keuntungan
+- crud manajemen barang, view daftar barang, cek persediaan barang (Elysa)
+- Crud Riwayat Pembelian, Pembelian Online, Pengaturan Dan Bantuan,View Beranda, (Hasbi)
+- Crud laporan keuntungan, daftar member,Login Admin(jihanz)
