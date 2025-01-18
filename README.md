@@ -1,465 +1,183 @@
-![alt text](Image/coverSRS.jpg?raw=true)
+# Software Requirement Specification (SRS) - Julie Toys
 
 ## BAB I Pendahuluan
 
+### 1.1 Tujuan
+Dokumen ini bertujuan untuk menggambarkan spesifikasi sistem perangkat lunak yang akan digunakan untuk membangun **Sistem Informasi Julie Toys**, sebuah toko online yang menjual berbagai mainan anak. SRS ini akan menjadi panduan teknis bagi pengembang dalam membangun dan mengelola aplikasi yang dapat diakses oleh admin dan pembeli.
 
-## 1.1 Tujuan
+### 1.2 Lingkup
+Sistem Informasi Julie Toys adalah aplikasi berbasis web yang menyediakan pengelolaan produk mainan, proses belanja, dan pencatatan riwayat transaksi. Fungsi utama dalam aplikasi ini meliputi:
+- **Shop (Toko):** Menampilkan produk mainan yang tersedia untuk dibeli.
+- **Riwayat Pembelian:** Pembeli dapat melihat transaksi pembelian mereka.
+- **Laporan Keuntungan:** Admin dapat mengakses laporan keuntungan.
+- **Tambah Produk:** Admin dapat menambahkan produk baru.
+- **FAQ:** Halaman pertanyaan umum untuk pembeli dan admin.
 
-WEB ini merupakan WEB mengenai UMKM toko kembang api yang bernama Julie Toys. WEB ini dibuat dengan tujuan untuk menarik perhatian para pembeli, memudahkan pembeli dalam mengecek barang, memudahkan admin untuk mengubah dan menambah barang maupun stok dan harga.
+## BAB II Gambaran Umum
 
+### 2.1 Perspektif Produk
+Julie Toys memiliki dua jenis pengguna utama:
+- **Admin:** Mengelola produk, memantau transaksi, dan melihat laporan keuntungan.
+- **Pembeli:** Membeli produk dan melihat riwayat pembelian mereka.
 
-## 1.2 Lingkup
-WEB ini kami buat untuk memudahkan pembeli dalam mencari produk yang tersedia dan admin untuk mengelolah barangnya dengan mudah.
+### 2.1.1 Antarmuka Sistem
+- **Halaman Admin:**
+  - Login dan register.
+  - Tambah/edit/hapus produk.
+  - Laporan keuntungan.
+  - Manajemen riwayat pembelian.
+  - Manajemen FAQ.
+  - Daftar akun pembeli.
+- **Halaman Pembeli:**
+  - Melihat produk.
+  - Melakukan pembelian.
+  - Mengakses riwayat pembelian dan halaman FAQ.
 
-## 1.3 Akronim, singkatan, definisi
-| Istilah | Definisi |
-| ------ | ------ |
-|    Login    | Digunakan untuk mengakses aplikasi       |
-|   Software Requirement Specification     | perangkat lunak yang akan dibuat dan sebagai penyembatani komunikasi pembuat dengan pengguna       |
-|    Use Case    | situasi dimana sistem anda digunakan untuk memenuhi satu atau lebih kebutuhan pemakaian anda       |
-
-## 1.4 Referensi
-Referensi yang digunakan dalam pengembangan perangkat lunak ini adalah :
-
-- https://www.toyskingdom.co.id/
-- https://www.toysrus.com/
-- https://www.kidzstation.co.id/?gad_source=1&gclid=CjwKCAiA0rW6BhAcEiwAQH28InEwsSVGhG11bxWBDmMEhYAJ4bZkFuEo9Ta5nItunPw03DVp9TK_MxoCDjEQAvD_BwE
-
-
-
-## 1.5 Overview
-Bab selanjutnya yaitu menjelaskan sistem yang di terapkan pada aplikasi. Menjelaskan gambaran umum dari aplikasi, sistem interface aplikasi dan alur sistemnya. Bab terakhir menjelaskan tentang setiap fungsi yang digunakan secara teknisnya. Pada bab 2 dan 3 merupakan deskripsi dari aplikasi yang akan diterapkan pada aplikasi yang dibuat.
-
-
-## BAB II GAMBARAN UMUM
-WEB yang kami berisi kan produk yang terdapat pada UMKM Julie Toys. Para pengunjung dapat mengecek produk yang tersedia berserta harga dan stoknya. Admin dapat melakukan proses CRUD dalam mengatur produk. Admin juga dapat melihat stok yang dibawah 80. Berikut akan kami jelaskan sistem software kami, pengunjung fungsi utama yaitu:
-
-- View artikel parenting
-- View dokumentasi kegiatan
-- View tentang BP3AM
-- View Contact BP3AM
-- View Team BP3AM
-
-Berikut ini fungsi admin yaitu:
-- Login
-- Input artikel parenting
-- Input dokumentasi kegiatan
-- Input data tentang BP3AM
-- Input data contact BP3AM
-- Input data team BP3AM
-- Update data
-- Delete data
-- Edit data
-
-## 2.1 Perspektif produk
-Sistem Informasi Parenting adalah sebuah sistem informasi yang diaplikasikan pada website. Terdapat 2 jenis aktor yaitu admin dan pengunjung. Pengolahan data dilakukan oleh admin pada website dan pengunjung hanya melihat informasi pada website.
-
-**2.1.1 Antarmuka Sistem**
-![alt text](revisi/revisi1.jpg?raw=true)
-
-Sistem Informasi Parenting memiliki 2 pengunjung yaitu admin dan pengunjung. Admin mempunyai fungsi mengelola data informasi dan Pengunjung bisa melihat informasi serta memberikan komentar.
-
-**2.1.2 Antarmuka Pengguna**
-
-**Halaman Admin**
-|  |  |
-|--|--|
-| ![alt text](revisi/loginAdmin.png?raw=true) halaman login admin diminta untuk mengisi username dan password.| ![alt text](revisi/Dashboard.png?raw=true) Setelah login admin akan masuk ke tampilan Dashboard admin.
-|  |  |
-| ![alt text](revisi/DataKegiatan.png?raw=true) Pada halaman admin akan terdapat halaman unutk mengelola data kegiatan, namun tidak hanya dat kegiatan tapi admin juga dapat mengelola data artikel, data kontak, data about dan data team dengan tamnpilan yang sama di halaman yang berbeda.| ![alt text](revisi/TambahDataKegiatan.png?raw=true) Pada halaman mengelola data kegiatan, admin juga dapat menambahkan data kegiatan, begitu juga dengan pengelolaan data di tabel lainnya.
-|  |  |
-| ![alt text](revisi/DataKegiatan.png?raw=true) Pada halaman mengelola data kegiatan juga terdapat aksi untuk mengedit data kegiatan.|![alt text](revisi/DataKegiatan.png?raw=true) Pada halaman mengelola data kegiatan, selain menambahkan dan mengedit, admin juga dapat menghapus data kegiatan yang mana ketika button hapus di klik akan muncul pop up untuk memastikan admin benar-benar ingin menghapus atau tidak.
-
-
-**Halaman User**
-|  |  |
-|--|--|
-| ![alt text](revisi/dashboardUser.png) Pada halaman pengunjung terdapat beranda yang berisi tampilan scrolling yang berisi seluruh konten seperti tampilan home, kegiatan, artikel about ,team dan contact.|![alt text](revisi/Kegiatan.png?raw=true) Pada halaman pengunjung terdapat halaman kegiatan yang berisi judul, gambar, tanggal dan deskripsi kegiatan.
-|  |  |
-| ![alt text](revisi/detailKegiatan.png?raw=true) Pada halaman pengunjung terdapat halaman lanjutan Kegiatan, jika pengunjung telah mengklik satu kegiatan yang akan dilihat, maka pada halaman ini akan tampil deskripsi dari kegiatan tersebut.|![alt text](revisi/artikel.png?raw=true) Pada halaman pengunjung terdapat halaman artikel yang berisi cover dan deskripsi singkat mengenai artikel.
-|  |  |
-| ![alt text](revisi/Detailartikel.png?raw=true) Pada halaman pengunjung terdapat halaman lanjutan Artikel jika pengunjung telah mengklik satu judul yang akan dibaca, maka pada halaman ini akan tampil deskripsi dari artikel tersebut, pada halaman ini pengunjung dapat meninggalkan komentar.|![alt text](revisi/tentang.png?raw=true) Pada halaman pengunjung terdapat halaman about yang berisi informasi website seputar pengelola.
-|  |  |
-| ![alt text](revisi/kontak.png?raw=true) Pada halaman pengunjung terdapat halaman about yang berisi informasi website seputar Alamat dan Contact Person.|![alt text](revisi/team.png?raw=true) Pada halaman pengunjung terdapat halaman team yang berisi team dari dinas pemberdayaan perempuan dan Perlindungan anak masyarakat kota pekanbaru.
-
-
-**2.1.3 Antarmuka perangkat keras**
+### **2.1.3 Antarmuka perangkat keras**
 ![alt text](Image/perangkatKeras.png?raw=true)
 Antarmuka perangkat keras yang digunakan untuk mengoperasikan Perangkat Lunak Sistem Parenting antara lain :
 
 PC / Laptop Untuk menjalankan Aplikasi ini.
+### 2.1.3 Antarmuka Perangkat Lunak
+- Browser web modern (Chrome, Firefox, Safari, Edge).
 
-**2.1.4 Antarmuka perangkat lunak**
+### 2.1.4 Operasi
+- **Login:** Untuk autentikasi pengguna.
+- **Input Data:** Untuk menambahkan informasi baru.
+- **Edit:** Untuk mengubah informasi.
+- **Hapus:** Untuk menghapus informasi.
+- **Simpan:** Untuk menyimpan data ke sistem.
 
-tidak ada
+### 2.2 Spesifikasi Kebutuhan Fungsional
+- **Admin Login:** Autentikasi menggunakan username dan password.
+- **Manajemen Produk:** Admin dapat menambah, mengedit, atau menghapus produk.
+- **Riwayat Pembelian:** Admin dan pembeli dapat melihat riwayat transaksi.
+- **FAQ Management:** Admin dapat menambah atau mengedit FAQ.
 
-**2.1.5 Antarmuka Komunikasi**
-
-Antarmuka komunikasi yang digunakan untuk mengoperasikan Perangkat Lunak Sistem Informasi Parenting antara lain :
-
-- PC
-
-- wifi/Jaringan
-
-**2.1.6 Batasan Memori**
-
-tidak ada
-
-**2.1.7 Operasi-operasi**
-| Operasi | Fungsi |
-| ------ | ------ |
-|   Login  | Digunakan untuk mengakses aplikasi    |
-|    Input Data    |    Digunakan untuk memasukkan data-data    |
-| Kembali |  Digunakan untuk kembali ke halaman sebelumnya |
-| Hapus | Digunakan untuk menghapus data|
-| Edit       |   Digunakan untuk mengubah data     |
-| View      |   Digunakan untuk menampilkan data     |
-| Simpan      |     Digunakan untuk menyimpan data   |
-
-**2.1.1 Kebutuhan adaptasi**
-
-tidak ada
-
-## 2.2 Spesifikasi kebutuhan fungsional
-![alt text](Image/2.2.png?raw=true)
-**2.2.1 Admin Login**
-
-Use Case: Login
-
-Diagram:
-![alt text](Image/adminLogin.png?raw=true)
-
-Deskripsi Singkat 
-Admin melakukan login terlebih dahulu sebelum masuk ke tampilan home admin, apabila gagal login akan muncul pesan alert error login. 
-
-Deskripsi Langkah-Langkah
-1. Admin melakukan login dengan username dan password.
-2. Sistem melakukan validasi login.
-3. Bila sukses sistem akan mengarahkan ke home admin.
-4. Bila gagal sistem akan menampilkan peringatan.
-
-Xref: Bagian 3.2.1, Login Admin
-
-**2.2.2 Admin Input Artikel Parenting**
-
-Use Case: Input Artikel Parenting
-
-Diagram:
-
-![alt text](Image/2.2.2.png?raw=true)
-
-Deskripsi Singkat
-Admin menginputkan kategori parenting lalu menambahkan judul dan deskripsi sesuain kategori.
-
-Deskripsi Langkah- langkah:
-1. Sistem akan menampilkan tampilan input artikel.
-2. Admin Dapat melihat,menambahkan, dan mengupload artikel.
-3. Sistem akan menyimpan ke database.
-4. Jika sudah disimpan sistem akan menampilkan peringatan.
-
-Xref: Bagian 3.2.2, Input data Artikel Parenting
-
-**2.2.3 Admin Input Dokumentasi kegiatan**
-
-Use Case: Input Dokumentasi kegiatan
-
-Diagram:
-![alt text](Image/2.2.3.png?raw=true)
-
-Deskripsi Singkat
-Sistem dapat menampilkan halaman input dokumentasi kegiatan dan Admin menginputkan dokumentasi kegiatan.
-
-Deskripsi Langkah- langkah:
-1. Sistem akan menampilkan tampilan publikasi kegiatan.
-2. Admin dapat melihat,menambahkan, dan mengupload kegiatan.
-3. Sistem akan menyimpan ke database.
-4. sudah disimpan sistem akan menampilkan peringatan.
-
-Xref: Bagian 3.2.3, Input data Dokumentasi kegiatan
-
-**2.2.4 Admin Input data tentang B3AM**
-
-Use Case: Input data tentang B3AM
-
-Diagram:![alt text](revisi/revisi2.jpg?raw=true)
-
-
-Deskripsi Singkat
-Sistem dapat menampilkan halaman Input data tentang B3AM dan Admin mengInput data tentang B3AM.
-Deskripsi Langkah- langkah:
-1. Sistem akan menampilkan tampilan data tentang B3AM.
-2. Admin dapat melihat,menambahkan, dan mengupload data tentang B3AM.
-3. Sistem akan menyimpan ke database.
-4. sudah disimpan sistem akan menampilkan peringatan.
-
-Xref: Bagian 3.2.3,data tentang B3AM
-
-**2.2.5 Admin Input data contact B3AM**
-
-Use Case: Input data contact B3AM
-
-Diagram:![alt text](revisi/revisi4.jpg?raw=true)
-
-
-Deskripsi Singkat
-Sistem dapat menampilkan halaman Input data contact B3AM dan Admin mengInput data contact B3AM.
-Deskripsi Langkah- langkah:
-1. Sistem akan menampilkan tampilan data contact B3AM.
-2. Admin dapat melihat,menambahkan, dan mengupload data contact B3AM.
-3. Sistem akan menyimpan ke database.
-4. sudah disimpan sistem akan menampilkan peringatan.
-
-Xref: Bagian 3.2.3,data contact B3AM
-
-**2.2.6 Admin Input data team B3AM**
-
-Use Case: Input data team B3AM
-
-Diagram:![alt text](revisi/revisi3.jpg?raw=true)
-
-
-Deskripsi Singkat
-Sistem dapat menampilkan halaman Input data team B3AM dan Admin mengInput data team B3AM.
-Deskripsi Langkah- langkah:
-1. Sistem akan menampilkan tampilan data team B3AM.
-2. Admin dapat melihat,menambahkan, dan mengupload data team B3AM.
-3. Sistem akan menyimpan ke database.
-4. sudah disimpan sistem akan menampilkan peringatan.
-
-Xref: Bagian 3.2.3,data team B3AM
-
-
-**2.2.7 pengunjung Mengunjungi website**
-
-Use Case: Mengunjungi website
-
-Diagram:
-![alt text](Image/pengunjungMengunjungiWeb.png?raw=true)
-
-Deskripsi Singkat 
-pengunjung mengunjungi website dan melihat informasi yang ada pada website seperti informasi seputar website serta informasi parenting yang telah tersedia, pengunjung juga dapat memberikan komentar pada konten parenting yang tersedia 
-
-Deskripsi Langkah-Langkah
-1. Sistem akan menampilkan halaman-halaman konten.
-2. pengunjung melihat informasi yang ada pada website seperti informasi seputar website atau informasi parenting serta juga dapat memberikan komentar pada konten parenting yang tersedia 
-3. pengunjung dapat mengklik tombol kembali ke halaman sebelumnya jika ingin keluar pada halaman konten yang telah dilihat.
-
-Xref: Bagian 3.2.7, Login pengunjung
-
-## 2.3 Spesifikasi kebutuhan non-fungsional
-- tabel kebutuhan non-fungsional
-
-| no | deskripsi |
-| ------ | ------ |
-|     1   |   Semua interface dan fungsi menggunakan Bahasa Indonesia     |
-|     2   |   Perangkat Lunak dapat dipakai di semua platofrm OS ( Admin, pengunjung )     |
-
-## 2.4 Karakteristik Pengguna
-Karakteristik pengguna dari perangkat lunak ini adalah pengguna langsung berinteraksi dengan sistem dan dihubungkan dengan hak akses atau level autentikasi.
-
-## 2.5 Batasan-batasan
-tidak ada
-
-## 2.6 Asumsi-asumsi
-tidak ada
-
-## 2.7 Kebutuhan Penyeimbang
-tidak ada
+### 2.3 Spesifikasi Kebutuhan Non-Fungsional
+| No | Deskripsi                                                                 |
+|----|---------------------------------------------------------------------------|
+| 1  | Semua antarmuka menggunakan Bahasa Indonesia.                             |
+| 2  | Sistem kompatibel dengan berbagai platform OS.                            |
+| 3  | Sistem mampu menangani transaksi pembelian dengan aman dan cepat.        |
+| 4  | Laporan keuntungan disajikan dalam bentuk grafik yang mudah dipahami.    |
+| 5  | Halaman FAQ mudah diakses oleh pengguna.                                 |
 
 ## BAB III Requirement Specification
 
+### 3.1 Kebutuhan Fungsional
+#### 3.1.1 Fungsi Admin
+- Login menggunakan username dan password.
+- Tambah/edit/hapus produk.
+- Lihat laporan keuntungan.
+- Tambah/edit/hapus FAQ.
+- Melihat daftar member.
+- Akses riwayat pembelian.
 
-## 3.1 Persyaratan Antarmuka Eksternal
-Salah satu cara mengakses website ini yaitu dengan registrasi, setelah registrasi akan login dengan memasukkan username dan password, kemudian sistem akan validasi login. setelah login berhasil pengunjung dapat melihat konten yang ada di website tersebut.
+#### 3.1.2 Fungsi Pembeli
+- Melihat daftar produk.
+- Pencarian produk.
+- Membeli produk.
+- Melihat riwayat pembelian.
+- Akses halaman FAQ.
 
-## 3.2 Functional Requirement
-**3.2.1 Login Admin**
+### 3.2 Kebutuhan Non-Fungsional
+#### 3.2.1 Keamanan
+- Autentikasi menggunakan username dan password terenkripsi.
+- Perlindungan dari serangan seperti SQL injection, XSS, dan CSRF.
 
-| Nama Fungsi         | Login                                  |
-| ------------------- | -------------------------------------- |
-| Xref                | Bagian 2.2.1 Login               |
-| Trigger             | Admin Membuka Website Sistem Informasi Parenting |
-| Precondition        | Halaman login                          |
-| Basic Path          | 1. Admin melakukan login dengan username dan password.
-|        |         2. Sistem melakukan validasi login. |
-|        | 3. Bila sukses, sistem akan mengarahkan ke home admin.  |
-|        | 4. Bila gagal, sistem akan menampilkan peringatan. |
-|     Alternative       |                   Tidak Ada                   |
-| Post Condition     |                  admin dapat login dan mengakses webiste sistem informasi parenting                   |
-|         Exception Push          |                  Username dan password salah                   |
+#### 3.2.2 Kinerja
+- Kecepatan akses optimal.
+- Skalabilitas untuk menangani lonjakan pengguna.
+- Downtime minimal.
 
-**3.2.2 Admin Input Informasi Artikel Parenting**
-| Nama Fungsi | Input Informasi Parenting |
-| ------ | ------ |
-| Xref       | Bagian 3.2.2, Input data artikel parenting       |
-| Triger       | Membuka website sistem informasi parenting        |
-| Precondition | Menginput data artikel parenting |
-| Basic Path | 1. Sistem akan menampilkan tampilan input artikel. |
-|            | 2. Admin dapat melihat,menambahkan, dan mengupload kegiatan. |
-|            | 3. Sistem akan menyimpan ke database. |
-|            | 4. Jika sudah disimpan sistem akan menampilkan peringatan. |
-| Alternative | Tidak ada |     
-| Post Condition | Admin mengelola artikel
-| Exception Push | Tidak ada koneksi |
+#### 3.2.3 Usability
+- Antarmuka mudah digunakan dan responsif.
 
+#### 3.2.4 Kompatibilitas
+- Mendukung browser modern.
+- Mobile-friendly.
 
-**3.2.3 Input Dokumentasi Kegiatan**
+#### 3.2.5 Backup dan Pemulihan
+- Backup otomatis setiap hari.
+- Rencana pemulihan jika terjadi kegagalan sistem.
 
-| Nama Fungsi        | Input Informasi Website                              |
-| ------------------- | ---------------------------------- |
-| Xref               | Bagian 2.2.3 Admin Input Dokumentasi Kegiatan                     |
-| Trigger            | admin dapat menginputkan data Dokumentasi Kegiatan |
-| Precondition       | Admin menginputkan Data dokumentasi Kegiatan ke website |
-| Basic Path         | 1. Sistem akan menampilkan tampilan publikasi kegiatan. |
-|                    | 2. Admin dapat melihat,menambahkan, dan mengupload kegiatan.   |
-|                    | 3. Sistem akan menyimpan ke database.   |
-|                    | 4. Jika sudah disimpan sistem akan menampilkan peringatan.   |
-| Alternative        |  Tidak Ada                                 |
-| Post Condition     |  Admin Dapat menginputkan data seputar website seperti alamat, pengelola, dan contact person.        |
-| Exception Push     | Tidak Ada        |
+## BAB IV Desain Sistem
 
-**3.2.4 Input data tentang BP3AM**
+### 4.1 Arsitektur Sistem
+- **Client-Server Architecture**:
+  - **Frontend:** HTML, CSS, JavaScript.
+  - **Backend:** PHP dan MySQL.
+  - **Database:** Menyimpan data produk, pengguna, dan transaksi.
 
-| Nama Fungsi        | Input Informasi Website                              |
-| ------------------- | ---------------------------------- |
-| Xref               | Bagian 2.2.4 Admin Input data tentang BP3AM                     |
-| Trigger            | admin dapat menginputkan data tentang BP3AM |
-| Precondition       | Admin menginputkan data tentang BP3AM ke website |
-| Basic Path         | 1. Sistem akan menampilkan tampilan data tentang BP3AM. |
-|                    | 2. Admin dapat melihat,menambahkan, dan mengupload data tentang BP3AM.   |
-|                    | 3. Sistem akan menyimpan ke database.   |
-|                    | 4. Jika sudah disimpan sistem akan menampilkan peringatan.   |
-| Alternative        |  Tidak Ada                                 |
-| Post Condition     |  Admin Dapat menginputkan data seputar website seperti alamat, pengelola, dan contact person.        |
-| Exception Push     | Tidak Ada        |
+### 4.2 Desain Database
+#### Tabel Produk
+| Kolom             | Tipe Data   | Deskripsi                                |
+|-------------------|------------|----------------------------------------|
+| ID                | INTEGER     | Identifikasi unik untuk setiap produk dalam database. |
+| NAME              | VARCHAR     | Nama produk.                            |
+| PRICE             | DECIMAL     | Harga produk dalam format desimal (contoh: Rp100.000,50). |
+| STOCK             | INTEGER     | Jumlah produk yang tersedia di stok toko. |
+| DESCRIPTION       | TEXT        | Penjelasan rinci tentang produk, seperti ukuran, warna, dll. |
+| CREATED_AT        | DATETIME    | Tanggal dan waktu data produk pertama kali dibuat. |
+| UPDATED_AT        | DATETIME    | Tanggal dan waktu terakhir data diperbarui. |
+| IS_AVAILABLE_ONLINE | INTEGER   | Status ketersediaan online (0 = tidak tersedia, 1 = tersedia). |
+| IMAGE             | VARCHAR     | URL atau path ke gambar produk.         |
 
-**3.2.5 Input data contact BP3AM**
+#### Tabel Riwayat Pembelian
+| Kolom          | Tipe Data   | Deskripsi                                  |
+|----------------|------------|------------------------------------------|
+| ID             | INTEGER     | Identifikasi unik untuk setiap transaksi atau pembelian. |
+| PRODUCT_ID     | INTEGER     | Referensi ke produk yang dibeli.          |
+| PURCHASE_DATE  | DATE        | Tanggal saat pembelian dilakukan.         |
+| QUANTITY       | INTEGER     | Jumlah produk yang dibeli.                |
+| TOTAL_PRICE    | DECIMAL     | Total harga transaksi.                    |
+| CREATED_AT     | TIMESTAMP   | Tanggal dan waktu data transaksi dibuat.  |
+| UPDATED_AT     | TIMESTAMP   | Tanggal dan waktu terakhir data diperbarui. |
+| RATING         | INTEGER     | Penilaian yang diberikan pelanggan (skala 1–5). |
 
-| Nama Fungsi        | Input Informasi Website                              |
-| ------------------- | ---------------------------------- |
-| Xref               | Bagian 2.2.5 Admin Input data contact BP3AM                     |
-| Trigger            | admin dapat menginputkan data contact BP3AM |
-| Precondition       | Admin menginputkan data contact BP3AM ke website |
-| Basic Path         | 1. Sistem akan menampilkan tampilan data contact BP3AM. |
-|                    | 2. Admin dapat melihat,menambahkan, dan mengupload data contact BP3AM.   |
-|                    | 3. Sistem akan menyimpan ke database.   |
-|                    | 4. Jika sudah disimpan sistem akan menampilkan peringatan.   |
-| Alternative        |  Tidak Ada                                 |
-| Post Condition     |  Admin Dapat menginputkan data seputar website seperti alamat, pengelola, dan contact person.        |
-| Exception Push     | Tidak Ada        |
+#### Tabel Pengguna (Users)
+| Kolom          | Tipe Data   | Deskripsi                                  |
+|----------------|------------|------------------------------------------|
+| ID             | INTEGER     | Identifikasi unik untuk setiap pengguna.  |
+| NAME           | VARCHAR     | Nama lengkap pengguna.                    |
+| EMAIL          | VARCHAR     | Alamat email pengguna.                    |
+| EMAIL_VERIFIED_AT | TIMESTAMP | Tanggal dan waktu verifikasi email.       |
+| PASSWORD       | VARCHAR     | Kata sandi terenkripsi.                   |
+| REMEMBER_TOKEN | VARCHAR     | Token untuk menjaga sesi pengguna.        |
+| CREATED_AT     | TIMESTAMP   | Tanggal dan waktu data dibuat.            |
+| UPDATED_AT     | TIMESTAMP   | Tanggal dan waktu terakhir data diperbarui. |
+| ROLE           | VARCHAR     | Peran pengguna, seperti "admin" atau "buyer". |
 
-**3.2.6 Input data team BP3AM**
+#### Tabel FAQ
+| Kolom          | Tipe Data   | Deskripsi                                  |
+|----------------|------------|------------------------------------------|
+| ID             | INTEGER     | Identifikasi unik untuk setiap pertanyaan FAQ. |
+| QUESTION       | TEXT        | Pertanyaan yang diajukan terkait produk atau layanan. |
+| ANSWER         | TEXT        | Jawaban atas pertanyaan tersebut.         |
+| CREATED_AT     | DATETIME    | Tanggal dan waktu data FAQ ditambahkan.   |
 
-| Nama Fungsi        | Input Informasi Website                              |
-| ------------------- | ---------------------------------- |
-| Xref               | Bagian 2.2.6 Admin Input data team BP3AM                     |
-| Trigger            | admin dapat menginputkan data team BP3AM |
-| Precondition       | Admin menginputkan data team BP3AM ke website |
-| Basic Path         | 1. Sistem akan menampilkan tampilan data team BP3AM. |
-|                    | 2. Admin dapat melihat,menambahkan, dan mengupload data team BP3AM.   |
-|                    | 3. Sistem akan menyimpan ke database.   |
-|                    | 4. Jika sudah disimpan sistem akan menampilkan peringatan.   |
-| Alternative        |  Tidak Ada                                 |
-| Post Condition     |  Admin Dapat menginputkan data seputar website seperti alamat, pengelola, dan contact person.        |
-| Exception Push     | Tidak Ada        |
+## BAB V Uji Coba dan Validasi Sistem
 
-**3.2.6 Mengunjungi website**
+### 5.1 Metode Pengujian
+1. **Pengujian Fungsional:**
+   - Login.
+   - Pembelian produk.
+   - Manajemen produk dan FAQ.
+2. **Pengujian Keamanan:**
+   - SQL injection.
+   - XSS.
+   - CSRF.
 
-| Nama Fungsi        |    pengunjung  Mengunjungi website             |
-| ------------------- | ---------------------------------- |
-| Xref               | Bagian 2.2.6 Pengunjung Mengunjungi website             |
-| Trigger            |pengunjung Dapat mengunjungi website dan melihat informasi yang ada pada website seperti informasi seputar website serta informasi parenting yang telah tersedia |
-| Precondition       |pengunjung Mengunjungi website |
-| Basic Path         | 1. Sistem akan menampilkan halaman-halaman konten. |
-|                    |  2.pengunjung melihat informasi yang ada pada website seperti informasi seputar website atau informasi parenting serta juga dapat memberikan komentar pada konten parenting yang tersedia    |
-|                    | 3.pengunjung dapat mengklik tombol kembali ke halaman sebelumnya jika ingin keluar pada halaman konten yang telah dilihat.    |
-| Alternative        |   Halaman Konten    |
-| Post Condition     |   pengunjung mengunjungi website dan melihat informasi yang ada pada website     |
-| Exception Push     |    Jika ada kesalahan server atau gangguan teknis, sistem akan menampilkan pesan kesalahan kepada pengguna. Pengguna dapat mencoba kembali atau menghubungi dukungan teknis.    |
+### 5.2 Uji Coba Pengguna
+- Feedback dari pengguna akan digunakan untuk menyempurnakan sistem.
 
-## 3.3 Struktur Detail Kebutuhan Non-Fungsional
-![alt text](Image/3.3.png?raw=true)
-**3.3.1 Logika Struktur Data**
-Struktur data logika pada sistem informasi parenting terdapat struktur Database yang dijelaskan menggunakan ERD.
+## BAB VI Penutupan
 
-**Tabel Admin**
-|Data Item|Tipe Data|Deskripsi|
-|--|--|--|
-|Id_Admin|int|Auto-increment dari Id_Admin|
-|username|varchar|Berisi username admin untuk mengakses sistem|
-|Password|varchar|Berisi password admin untuk mengakses sistem|
-|level|varchar|untuk membedakan level saat login antara admin dan pengunjung|
+### 6.1 Kesimpulan
+Sistem Julie Toys adalah aplikasi e-commerce yang memfasilitasi jual beli mercun online dengan fitur-fitur utama seperti manajemen produk, laporan keuntungan, dan FAQ.
 
-**Tabel Artikel**
-|Data Item|Tipe Data|Deskripsi|
-|--|--|--|
-|id_Artikel|int|Auto-increment dari Id_artikel|
-|gambar|varchar|Berisi gambar didalam artikel sistem|
-|deskripsi|text|Berisi deskripsi artikel sistem|
-|judul|varchar|Berisi judul pada artikel sistem|
-|kategori|varchar|Berisi kategori pada artikel sistem|
-
-**Tabel Kegiatan**
-|Data Item|Tipe Data|Deskripsi|
-|--|--|--|
-|id_kegiatan|int|Auto-increment dari Id_kegiatan|
-|gambar|varchar|Berisi gambar didalam kegiatan sistem|
-|deskripsi|text|Berisi deskripsi kegiatan sistem|
-|judul|varchar|Berisi judul pada kegiatan sistem|
-|tanggal|varchar|Berisi tanggal pada kegiatan sistem|
-
-**Tabel about**
-|Data Item|Tipe Data|Deskripsi|
-|--|--|--|
-|id_about|int|Auto-increment dari id_about|
-|gambar|varchar|Berisi gambar didalam about sistem|
-|deskripsi|text|Berisi deskripsi about sistem|
-
-**Tabel contact**
-|Data Item|Tipe Data|Deskripsi|
-|--|--|--|
-|id_contact|int|Auto-increment dari id_contact|
-|judul|varchar|Berisi judul pada contact sistem|
-|isi|text|Berisi isi contact sistem|
-
-**Tabel team**
-|Data Item|Tipe Data|Deskripsi|
-|--|--|--|
-|id_team|int|Auto-increment dari Id_team|
-|gambar|varchar|Berisi gambar didalam team sistem|
-|nama|text|Berisi nama team sistem|
-|jabatan|varchar|Berisi jabatan pada team sistem|
-
-
-
-## Pembagian tugas
-BAB 1 ->Nindy
-
-BAB 2 
-2.1
-  
-  2.1.1 -> Nindy
-  
-  2.1.2 -> Nindy
-  
-  2.1.3 -> Ariyan
-  
-  2.1.4 -> Ariyan
- 
-  2.1.5 -> Ariyan
-  
-  2.1.6 -> Raditya
-  
-  2.1.7 -> Raditya
-  
-  2.1.8 -> Raditya
-
-2.2 semua poin-poin (nindy)
-
-BAB 3 
-
-3.1 nindy
-
-3.2 nindy
-
-3.3 Nindy
+### 6.2 Rencana Pengembangan
+- Integrasi pembayaran online.
+- Perhitungan otomatis ongkos kirim.
+- Penambahan sistem diskon dan promo.
