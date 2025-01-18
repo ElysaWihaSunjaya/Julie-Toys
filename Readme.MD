@@ -313,3 +313,41 @@ Dengan sistem ini, diharapkan dapat meningkatkan kenyamanan, kecepatan, dan kemu
 - Integrasi pembayaran online.
 - Perhitungan otomatis ongkos kirim.
 - Penambahan sistem diskon dan promo.
+
+## Pembagian tugas
+BAB 1 ->XXX
+
+BAB 2 
+2.1
+  
+  2.1.1 -> XXX
+  
+  2.1.2 -> XXX
+  
+  2.1.3 -> XXX
+  
+  2.1.4 -> XXX
+ 
+  2.1.5 -> XXX
+  
+  2.1.6 -> XXX
+  
+  2.1.7 -> XXX
+  
+  2.1.8 -> XXX
+
+2.2 XXX
+
+BAB 3 
+
+3.1 XXX
+
+3.2 XXX
+
+3.3 XXX
+
+Pembagian tugas:
+-table : manajemen_barangs (elysa), pembelian online, daftar member, pengaturan dan bantuan,laporan keuntungan
+-crud manajemen barang, view daftar barang, cek persediaan barang (Elysa)
+-Crud Riwayat Pembelian, Pembelian Online, Pengaturan Dan Bantuan,View Beranda, (Hasbi)
+-Crud laporan keuntungan, daftar member,Login Admin(jihanz)
