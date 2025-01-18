@@ -1,4 +1,4 @@
-<nav x-data="{ open: false }" class="bg-white border-b border-gray-100">
+<nav x-data="{ open: false }" class="navbar bg-white border-b border-gray-100">
     <!-- Primary Navigation Menu -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16">
@@ -150,3 +150,50 @@
     </div>
     @endguest
 </div>
+
+<style>
+    /* Navbar Animasi */
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        background-color: #343a40;
+        animation: slideDown 1s ease-out;
+        width: 100%;
+    }
+
+    @keyframes slideDown {
+        0% { transform: translateY(-100%); }
+        100% { transform: translateY(0); }
+    }
+
+    .navbar-brand, .navbar-nav .nav-link {
+        color: white !important;
+        transition: color 0.3s ease;
+    }
+
+    .navbar-nav .nav-link:hover {
+        color: #ffcb06 !important;
+    }
+
+    /* Styling untuk Body */
+    body {
+        padding-top: 70px; /* Sesuaikan dengan tinggi navbar */
+    }
+
+    /* Styling untuk Header */
+    header {
+        background-color: #f8f9fa;
+        padding: 40px 0;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+</style>
