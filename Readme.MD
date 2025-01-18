@@ -25,6 +25,9 @@ Sistem Informasi Julie Toys adalah aplikasi berbasis web yang menyediakan pengel
 Referensi yang digunakan dalam pengembangan perangkat lunak ini adalah :
 https://www.kidzstation.co.id/?gad_source=1&gclid=CjwKCAiA0rW6BhAcEiwAQH28InEwsSVGhG11bxWBDmMEhYAJ4bZkFuEo9Ta5nItunPw03DVp9TK_MxoCDjEQAvD_BwE
 
+## 1.5 Overview
+Bab selanjutnya yaitu menjelaskan sistem yang di terapkan pada aplikasi. Menjelaskan gambaran umum dari aplikasi, sistem interface aplikasi dan alur sistemnya. Bab terakhir menjelaskan tentang setiap fungsi yang digunakan secara teknisnya. Pada bab 2 dan 3 merupakan deskripsi dari aplikasi yang akan diterapkan pada aplikasi yang dibuat.
+
 
 ## BAB II Gambaran Umum
 Pada sistem Julie Toys, terdapat dua jenis pengguna: Admin dan Pembeli. Admin memiliki hak akses penuh terhadap sistem untuk mengelola produk, melihat laporan keuntungan, dan membuat laporan transaksi, sementara Pembeli dapat mengakses katalog produk dan melakukan pembelian, serta melihat riwayat pembelian mereka.
@@ -42,6 +45,7 @@ Julie Toys adalah toko mainan online yang dapat diakses melalui web. Sistem ini 
 - **Pembeli:** Membeli produk dan melihat riwayat pembelian mereka.
 
 ### 2.1.1 Antarmuka Sistem
+![alt text](img-laporan/antarmuka Sistem.png?raw=true)
 - **Halaman Admin:**
   - Login dan register.
   - Tambah/edit/hapus produk.
