@@ -316,6 +316,15 @@ Dengan sistem ini, diharapkan dapat meningkatkan kenyamanan, kecepatan, dan kemu
 
 ## Pembagian tugas
 BAB 1 -jihanz
+  1.1 -> jihanz
+  
+  1.2 -> jihanz
+  
+  1.3 -> jihanz
+  
+  1.4 -> jihanz
+ 
+  1.5 -> jihanz
 
 BAB 2 
   
@@ -329,9 +338,9 @@ BAB 2
  
   2.5 -> jihanz
   
-  2.6 -> jihanz
+  2.6 -> hasbi
   
-  2.7 -> jihanz
+  2.7 -> hasbi
 
 BAB 3 
   
