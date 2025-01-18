@@ -315,38 +315,51 @@ Dengan sistem ini, diharapkan dapat meningkatkan kenyamanan, kecepatan, dan kemu
 - Penambahan sistem diskon dan promo.
 
 ## Pembagian tugas
-BAB 1 ->XXX
+BAB 1 -jihanz
 
 BAB 2 
-2.1
   
-  2.1.1 -> XXX
+  2.1 -> jihanz
   
-  2.1.2 -> XXX
+  2.2 -> jihanz
   
-  2.1.3 -> XXX
+  2.3 -> jihanz
   
-  2.1.4 -> XXX
+  2.4 -> jihanz
  
-  2.1.5 -> XXX
+  2.5 -> jihanz
   
-  2.1.6 -> XXX
+  2.6 -> jihanz
   
-  2.1.7 -> XXX
-  
-  2.1.8 -> XXX
-
-2.2 XXX
+  2.7 -> jihanz
 
 BAB 3 
 
-3.1 XXX
+    3.1 hasbi
+    
+    3.2 hasbi
 
-3.2 XXX
+BAB 4
 
-3.3 XXX
+    4.1 hasbi
+    
+    4.2 hasbi
 
+BAB 5
 
+    5.1 hasbi
+    
+    5.2 hasbi
+
+BAB 6
+
+    6.1 hasbi
+    
+    6.2 hasbi
+
+Seluruh  Flow : Elysa
+
+Pembagian Tugas  Projek
 - table : manajemen_barangs (elysa), pembelian online, daftar member, pengaturan dan bantuan,laporan keuntungan
 - crud manajemen barang, view daftar barang, cek persediaan barang (Elysa)
 - Crud Riwayat Pembelian, Pembelian Online, Pengaturan Dan Bantuan,View Beranda, (Hasbi)
