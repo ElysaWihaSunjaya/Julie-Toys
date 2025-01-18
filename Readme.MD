@@ -33,16 +33,16 @@ Bab selanjutnya yaitu menjelaskan sistem yang di terapkan pada aplikasi. Menjela
 Pada sistem Julie Toys, terdapat dua jenis pengguna: Admin dan Pembeli. Admin memiliki hak akses penuh terhadap sistem untuk mengelola produk, melihat laporan keuntungan, dan membuat laporan transaksi, sementara Pembeli dapat mengakses katalog produk dan melakukan pembelian, serta melihat riwayat pembelian mereka.
 
 Fitur utama yang ada dalam aplikasi adalah:
-- **Shop (Toko): Pengunjung (pembeli) dapat melihat produk mainan yang tersedia untuk dibeli.
-- **Riwayat Pembelian: Pembeli dapat memeriksa riwayat transaksi mereka.
-- **Laporan Keuntungan: Hanya admin yang dapat mengakses dan melihat laporan keuntungan yang dihasilkan oleh toko.
-- **Tambah Produk: Admin dapat menambah produk baru yang akan muncul di toko.
-- **FAQ: Halaman FAQ yang dapat diakses oleh admin dan pembeli untuk menjawab pertanyaan umum terkait produk dan transaksi.
+- hop (Toko): Pengunjung (pembeli) dapat melihat produk mainan yang tersedia untuk dibeli.
+- iwayat Pembelian: Pembeli dapat memeriksa riwayat transaksi mereka.
+- Laporan Keuntungan: Hanya admin yang dapat mengakses dan melihat laporan keuntungan yang dihasilkan oleh toko.
+- Tambah Produk: Admin dapat menambah produk baru yang akan muncul di toko.
+- FAQ: Halaman FAQ yang dapat diakses oleh admin dan pembeli untuk menjawab pertanyaan umum terkait produk dan transaksi.
 
 ### 2.1 Perspektif Produk
 Julie Toys adalah toko mainan online yang dapat diakses melalui web. Sistem ini memiliki dua jenis aktor utama:
-- **Admin:** Mengelola produk, memantau transaksi, dan melihat laporan keuntungan.
-- **Pembeli:** Membeli produk dan melihat riwayat pembelian mereka.
+- Admin: Mengelola produk, memantau transaksi, dan melihat laporan keuntungan.
+- Pembeli: Membeli produk dan melihat riwayat pembelian mereka.
 
 ### 2.1.1 Antarmuka Sistem
 ![Antarmuka Sistem](https://github.com/ElysaWihaSunjaya/Julie-Toys/blob/8fa48719b581c059699ad35c73669a5c42c0ae99/img-laporan/antarmuka%20Sistem.png)
@@ -93,6 +93,8 @@ PC / Laptop Untuk menjalankan Aplikasi ini.
 - **PC** 
 - **wifi/Jaringan* 
 
+### 2.1.6 Batasan Memori
+tidak ada
 
 ### 2.1.7 Operasi
 - **Login:** Untuk autentikasi pengguna.
@@ -110,7 +112,10 @@ PC / Laptop Untuk menjalankan Aplikasi ini.
 
 - **Riwayat Pembelian:** Admin dan pembeli dapat melihat riwayat transaksi.
 ![Admin Lihat Laporan Keuntungan](https://github.com/ElysaWihaSunjaya/Julie-Toys/blob/3ab96195ea3d65858e5d4350fbf7c0430997bd6c/img-laporan/Admin%20lihat%20laporan%20keuntungan.png)
-
+- **Daftar member:** Admin dapat melihat  dan menambahkan daftar member(buyer).
+![Admin Daftar Member](https://github.com/ElysaWihaSunjaya/Julie-Toys/blob/3ab96195ea3d65858e5d4350fbf7c0430997bd6c/img-laporan/Admin%20daftar%20member.png)
+- **Edit footer :** Admin dapat mengedit Footer.
+![Admin Edit Footer](https://github.com/ElysaWihaSunjaya/Julie-Toys/blob/787d9674ebb4de7fdd049c9d29dad400da027306/img-laporan/Admin%20edit%20footer.png)
 - **FAQ Management:** Admin dapat menambah atau mengedit FAQ.
 
 ### 2.3 Spesifikasi Kebutuhan Non-Fungsional
@@ -128,13 +133,13 @@ PC / Laptop Untuk menjalankan Aplikasi ini.
 
 Kebutuhan fungsional sistem Julie Toys mencakup berbagai fitur yang harus ada untuk mendukung operasional aplikasi e-commerce dalam jual beli mercun secara online. Fitur-fitur ini bertujuan untuk memberikan pengalaman pengguna yang optimal dan efisien. Adapun kebutuhan fungsional yang harus ada dalam sistem ini meliputi:
 ![Pengunjung Mengunjungi Website Use Case](https://github.com/ElysaWihaSunjaya/Julie-Toys/blob/64721acbe17dfc831e5dc3e63a7c1a043c42fb23/img-laporan/pengunjung%20Mengunjungi%20website%20Use%20Case_%20Mengunjungi%20website.png)
+
 Deskripsi Singkat
 pengunjung mengunjungi website dan melihat informasi yang ada pada website seperti informasi seputar website serta informasi parenting yang telah tersedia, pengunjung juga dapat memberikan komentar pada konten parenting yang tersedia
 
 1. **Manajemen Pengguna:**
    - Pengguna dapat membuat akun, login, dan logout dari aplikasi.
    - Pengguna dapat memperbarui data profil, termasuk informasi pengiriman dan pembayaran.
-![Admin Daftar Member](https://github.com/ElysaWihaSunjaya/Julie-Toys/blob/3ab96195ea3d65858e5d4350fbf7c0430997bd6c/img-laporan/Admin%20daftar%20member.png)
    - Admin dapat mengelola data pengguna, termasuk hak akses (sebagai admin atau pelanggan).
 
 2. **Manajemen Produk:**
