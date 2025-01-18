@@ -82,7 +82,8 @@ Julie Toys adalah toko mainan online yang dapat diakses melalui web. Sistem ini 
 
 
 ### **2.1.3 Antarmuka perangkat keras**
-![alt text](Image/perangkatKeras.png?raw=true)
+![Antarmuka Perangkat Keras](https://github.com/ElysaWihaSunjaya/Julie-Toys/blob/549723d1f781326fe2b1c27f13474a6b1d3f1cb1/img-laporan/Antarmuka%20perangkat%20keras.png)
+
 Antarmuka perangkat keras yang digunakan untuk mengoperasikan Perangkat Lunak Sistem Parenting antara lain :
 
 PC / Laptop Untuk menjalankan Aplikasi ini.
@@ -97,7 +98,9 @@ PC / Laptop Untuk menjalankan Aplikasi ini.
 - **Simpan:** Untuk menyimpan data ke sistem.
 
 ### 2.2 Spesifikasi Kebutuhan Fungsional
-- **Admin Login:** Autentikasi menggunakan username dan password.
+- **Admin Login:** 
+https://github.com/ElysaWihaSunjaya/Julie-Toys/blob/549723d1f781326fe2b1c27f13474a6b1d3f1cb1/img-laporan/Admin%20Login%20Use%20Case_%20Login.png
+- Autentikasi menggunakan username dan password.
 - **Manajemen Produk:** Admin dapat menambah, mengedit, atau menghapus produk.
 - **Riwayat Pembelian:** Admin dan pembeli dapat melihat riwayat transaksi.
 - **FAQ Management:** Admin dapat menambah atau mengedit FAQ.
