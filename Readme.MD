@@ -105,15 +105,10 @@ tidak ada
 
 ### 2.2 Spesifikasi Kebutuhan Fungsional
 - **Admin Login:** 
-![Admin Login Use Case](https://github.com/ElysaWihaSunjaya/Julie-Toys/blob/64721acbe17dfc831e5dc3e63a7c1a043c42fb23/img-laporan/Admin%20Login%20Use%20Case_%20Login.png)
 - Autentikasi menggunakan username dan password.
 - **Manajemen Produk:** Admin dapat menambah, mengedit, atau menghapus produk.
-![Admin Input Produk](https://github.com/ElysaWihaSunjaya/Julie-Toys/blob/3ab96195ea3d65858e5d4350fbf7c0430997bd6c/img-laporan/Admin%20Input%20Produk.png)
-
 - **Riwayat Pembelian:** Admin dan pembeli dapat melihat riwayat transaksi.
-![Admin Lihat Laporan Keuntungan](https://github.com/ElysaWihaSunjaya/Julie-Toys/blob/3ab96195ea3d65858e5d4350fbf7c0430997bd6c/img-laporan/Admin%20lihat%20laporan%20keuntungan.png)
 - **Daftar member:** Admin dapat melihat  dan menambahkan daftar member(buyer).
-![Admin Daftar Member](https://github.com/ElysaWihaSunjaya/Julie-Toys/blob/3ab96195ea3d65858e5d4350fbf7c0430997bd6c/img-laporan/Admin%20daftar%20member.png)
 - **Edit footer :** Admin dapat mengedit Footer.
 ![Admin Edit Footer](https://github.com/ElysaWihaSunjaya/Julie-Toys/blob/787d9674ebb4de7fdd049c9d29dad400da027306/img-laporan/Admin%20edit%20footer.png)
 - **FAQ Management:** Admin dapat menambah atau mengedit FAQ.
@@ -127,13 +122,28 @@ tidak ada
 | 4  | Laporan keuntungan disajikan dalam bentuk grafik yang mudah dipahami.    |
 | 5  | Halaman FAQ mudah diakses oleh pengguna.                                 |
 
+## 2.4 Karakteristik Pengguna
+Karakteristik pengguna dari perangkat lunak ini adalah pengguna langsung berinteraksi dengan sistem dan dihubungkan dengan hak akses atau level autentikasi.
+
+## 2.5 Batasan-batasan
+tidak ada
+
+## 2.6 Asumsi-asumsi
+tidak ada
+
+## 2.7 Kebutuhan Penyeimbang
+tidak ada
+
 ## BAB III Requirement Specification
 
-### 3.1 Kebutuhan Fungsional
+## 3.1 Persyaratan Antarmuka Eksternal
+Salah satu cara mengakses website ini yaitu dengan registrasi, setelah registrasi akan login dengan memasukkan username dan password, kemudian sistem akan validasi login. setelah login berhasil pengunjung dapat melihat konten yang ada di website tersebut.
+
+### 3.2 Kebutuhan Fungsional
 
 Kebutuhan fungsional sistem Julie Toys mencakup berbagai fitur yang harus ada untuk mendukung operasional aplikasi e-commerce dalam jual beli mercun secara online. Fitur-fitur ini bertujuan untuk memberikan pengalaman pengguna yang optimal dan efisien. Adapun kebutuhan fungsional yang harus ada dalam sistem ini meliputi:
-![Pengunjung Mengunjungi Website Use Case](https://github.com/ElysaWihaSunjaya/Julie-Toys/blob/64721acbe17dfc831e5dc3e63a7c1a043c42fb23/img-laporan/pengunjung%20Mengunjungi%20website%20Use%20Case_%20Mengunjungi%20website.png)
 
+![Pengunjung Mengunjungi Website Use Case](https://github.com/ElysaWihaSunjaya/Julie-Toys/blob/64721acbe17dfc831e5dc3e63a7c1a043c42fb23/img-laporan/pengunjung%20Mengunjungi%20website%20Use%20Case_%20Mengunjungi%20website.png)
 Deskripsi Singkat
 pengunjung mengunjungi website dan melihat informasi yang ada pada website seperti informasi seputar website serta informasi parenting yang telah tersedia, pengunjung juga dapat memberikan komentar pada konten parenting yang tersedia
 
@@ -158,6 +168,7 @@ pengunjung mengunjungi website dan melihat informasi yang ada pada website seper
 
 5. **Fitur FAQ:**
    - Pengguna dapat mengakses halaman FAQ untuk mencari jawaban atas pertanyaan umum mengenai produk, pengiriman, atau kebijakan pembelian.
+   - ![Pengunjung Mengisi FAQ](https://github.com/ElysaWihaSunjaya/Julie-Toys/blob/787d9674ebb4de7fdd049c9d29dad400da027306/img-laporan/Pengunjung%20mengisi%20Faq.png)
    - Admin dapat mengelola dan memperbarui isi FAQ sesuai kebutuhan.
 
 
@@ -165,11 +176,17 @@ Dengan adanya kebutuhan fungsional ini, sistem Julie Toys diharapkan dapat membe
 
 #### 3.1.1 Fungsi Admin
 - Login menggunakan username dan password.
+- ![Admin Login Use Case](https://github.com/ElysaWihaSunjaya/Julie-Toys/blob/64721acbe17dfc831e5dc3e63a7c1a043c42fb23/img-laporan/Admin%20Login%20Use%20Case_%20Login.png)
 - Tambah/edit/hapus produk.
+- ![Admin Input Produk](https://github.com/ElysaWihaSunjaya/Julie-Toys/blob/3ab96195ea3d65858e5d4350fbf7c0430997bd6c/img-laporan/Admin%20Input%20Produk.png)
 - Lihat laporan keuntungan.
+- ![Admin Lihat Laporan Keuntungan](https://github.com/ElysaWihaSunjaya/Julie-Toys/blob/3ab96195ea3d65858e5d4350fbf7c0430997bd6c/img-laporan/Admin%20lihat%20laporan%20keuntungan.png)
 - Tambah/edit/hapus FAQ.
 - Melihat daftar member.
+- ![Admin Daftar Member](https://github.com/ElysaWihaSunjaya/Julie-Toys/blob/3ab96195ea3d65858e5d4350fbf7c0430997bd6c/img-laporan/Admin%20daftar%20member.png)
 - Akses riwayat pembelian.
+-  Admin dapat mengedit Footer
+- ![Admin Edit Footer](https://github.com/ElysaWihaSunjaya/Julie-Toys/blob/787d9674ebb4de7fdd049c9d29dad400da027306/img-laporan/Admin%20edit%20footer.png)
 
 #### 3.1.2 Fungsi Pembeli
 - Melihat daftar produk.
@@ -178,7 +195,10 @@ Dengan adanya kebutuhan fungsional ini, sistem Julie Toys diharapkan dapat membe
 - Melihat riwayat pembelian.
 - Akses halaman FAQ.
 
-### 3.2 Kebutuhan Non-Fungsional
+### 3.2 Struktur Kebutuhan Non-Fungsional
+
+![Struktur Detail Kebutuhan Non-Fungsional](https://github.com/ElysaWihaSunjaya/Julie-Toys/blob/ba32763cd5cde70e35735c13e51e4d69ab953bf2/img-laporan/Struktur%20Detail%20Kebutuhan%20Non-Fungsional.png)
+
 #### 3.2.1 Keamanan
 - Autentikasi menggunakan username dan password terenkripsi.
 - Perlindungan dari serangan seperti SQL injection, XSS, dan CSRF.
