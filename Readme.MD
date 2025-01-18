@@ -49,6 +49,30 @@ Julie Toys adalah toko mainan online yang dapat diakses melalui web. Sistem ini 
   - Melakukan pembelian.
   - Mengakses riwayat pembelian dan halaman FAQ.
 
+**2.1.2 Antarmuka Pengguna**
+
+**Halaman Admin**
+|  |  |
+|--|--|
+| ![alt text](revisi/loginAdmin.png?raw=true) halaman login admin diminta untuk mengisi username dan password.| ![alt text](revisi/Dashboard.png?raw=true) Setelah login admin akan masuk ke tampilan Dashboard admin.
+|  |  |
+| ![alt text](revisi/DataKegiatan.png?raw=true) Pada halaman admin akan terdapat halaman unutk mengelola data kegiatan, namun tidak hanya dat kegiatan tapi admin juga dapat mengelola data artikel, data kontak, data about dan data team dengan tamnpilan yang sama di halaman yang berbeda.| ![alt text](revisi/TambahDataKegiatan.png?raw=true) Pada halaman mengelola data kegiatan, admin juga dapat menambahkan data kegiatan, begitu juga dengan pengelolaan data di tabel lainnya.
+|  |  |
+| ![alt text](revisi/DataKegiatan.png?raw=true) Pada halaman mengelola data kegiatan juga terdapat aksi untuk mengedit data kegiatan.|![alt text](revisi/DataKegiatan.png?raw=true) Pada halaman mengelola data kegiatan, selain menambahkan dan mengedit, admin juga dapat menghapus data kegiatan yang mana ketika button hapus di klik akan muncul pop up untuk memastikan admin benar-benar ingin menghapus atau tidak.
+
+
+**Halaman User**
+|  |  |
+|--|--|
+| ![alt text](revisi/dashboardUser.png) Pada halaman pengunjung terdapat beranda yang berisi tampilan scrolling yang berisi seluruh konten seperti tampilan home, kegiatan, artikel about ,team dan contact.|![alt text](revisi/Kegiatan.png?raw=true) Pada halaman pengunjung terdapat halaman kegiatan yang berisi judul, gambar, tanggal dan deskripsi kegiatan.
+|  |  |
+| ![alt text](revisi/detailKegiatan.png?raw=true) Pada halaman pengunjung terdapat halaman lanjutan Kegiatan, jika pengunjung telah mengklik satu kegiatan yang akan dilihat, maka pada halaman ini akan tampil deskripsi dari kegiatan tersebut.|![alt text](revisi/artikel.png?raw=true) Pada halaman pengunjung terdapat halaman artikel yang berisi cover dan deskripsi singkat mengenai artikel.
+|  |  |
+| ![alt text](revisi/Detailartikel.png?raw=true) Pada halaman pengunjung terdapat halaman lanjutan Artikel jika pengunjung telah mengklik satu judul yang akan dibaca, maka pada halaman ini akan tampil deskripsi dari artikel tersebut, pada halaman ini pengunjung dapat meninggalkan komentar.|![alt text](revisi/tentang.png?raw=true) Pada halaman pengunjung terdapat halaman about yang berisi informasi website seputar pengelola.
+|  |  |
+| ![alt text](revisi/kontak.png?raw=true) Pada halaman pengunjung terdapat halaman about yang berisi informasi website seputar Alamat dan Contact Person.|![alt text](revisi/team.png?raw=true) Pada halaman pengunjung terdapat halaman team yang berisi team dari dinas pemberdayaan perempuan dan Perlindungan anak masyarakat kota pekanbaru.
+
+
 
 ### **2.1.3 Antarmuka perangkat keras**
 ![alt text](Image/perangkatKeras.png?raw=true)
@@ -83,6 +107,35 @@ PC / Laptop Untuk menjalankan Aplikasi ini.
 ## BAB III Requirement Specification
 
 ### 3.1 Kebutuhan Fungsional
+
+Kebutuhan fungsional sistem Julie Toys mencakup berbagai fitur yang harus ada untuk mendukung operasional aplikasi e-commerce dalam jual beli mercun secara online. Fitur-fitur ini bertujuan untuk memberikan pengalaman pengguna yang optimal dan efisien. Adapun kebutuhan fungsional yang harus ada dalam sistem ini meliputi:
+
+1. **Manajemen Pengguna:**
+   - Pengguna dapat membuat akun, login, dan logout dari aplikasi.
+   - Pengguna dapat memperbarui data profil, termasuk informasi pengiriman dan pembayaran.
+   - Admin dapat mengelola data pengguna, termasuk hak akses (sebagai admin atau pelanggan).
+
+2. **Manajemen Produk:**
+   - Admin dapat menambahkan, mengedit, atau menghapus produk yang dijual di platform.
+   - Pengguna dapat mencari, melihat, dan memfilter produk berdasarkan kategori atau harga.
+   - Pengguna dapat melihat detail produk, termasuk gambar, deskripsi, harga, dan stok yang tersedia.
+
+3. **Proses Pembelian:**
+   - Pengguna dapat menambahkan produk ke keranjang belanja dan mengeditnya.
+   - Pengguna dapat melanjutkan ke proses checkout untuk menyelesaikan pembelian.
+   - Sistem mendukung berbagai metode pembayaran yang aman dan dapat diintegrasikan dengan sistem pembayaran online.
+
+4. **Pelaporan Keuntungan:**
+   - Admin dapat melihat laporan keuntungan berdasarkan penjualan yang terjadi dalam jangka waktu tertentu.
+   - Laporan dapat mencakup detail transaksi, produk yang paling laku, dan pendapatan yang diperoleh.
+
+5. **Fitur FAQ:**
+   - Pengguna dapat mengakses halaman FAQ untuk mencari jawaban atas pertanyaan umum mengenai produk, pengiriman, atau kebijakan pembelian.
+   - Admin dapat mengelola dan memperbarui isi FAQ sesuai kebutuhan.
+
+
+Dengan adanya kebutuhan fungsional ini, sistem Julie Toys diharapkan dapat memberikan pengalaman yang lancar dan aman bagi penggunanya, serta mempermudah pengelolaan dan operasi bisnis secara keseluruhan.
+
 #### 3.1.1 Fungsi Admin
 - Login menggunakan username dan password.
 - Tambah/edit/hapus produk.
@@ -177,22 +230,37 @@ PC / Laptop Untuk menjalankan Aplikasi ini.
 ## BAB V Uji Coba dan Validasi Sistem
 
 ### 5.1 Metode Pengujian
+Untuk memastikan bahwa sistem Julie Toys berfungsi dengan baik dan aman digunakan, dilakukan berbagai metode pengujian yang terbagi dalam dua kategori utama:
+
 1. **Pengujian Fungsional:**
-   - Login.
-   - Pembelian produk.
-   - Manajemen produk dan FAQ.
+   - **Login:** Pengujian untuk memastikan proses login pengguna berjalan dengan lancar dan aman.
+   - **Pembelian Produk:** Pengujian untuk memastikan alur pembelian produk dapat dilakukan dengan baik, mulai dari pemilihan produk hingga pembayaran.
+   - **Manajemen Produk dan FAQ:** Pengujian untuk memastikan fitur manajemen produk, serta penyediaan informasi melalui FAQ berjalan dengan efektif.
+
 2. **Pengujian Keamanan:**
-   - SQL injection.
-   - XSS.
-   - CSRF.
+   - **SQL Injection:** Pengujian untuk mendeteksi potensi kerentanannya terhadap serangan SQL Injection yang dapat merusak integritas data.
+   - **Cross-Site Scripting (XSS):** Pengujian untuk memeriksa apakah sistem rentan terhadap XSS, yang dapat memungkinkan eksekusi skrip berbahaya di sisi klien.
+   - **Cross-Site Request Forgery (CSRF):** Pengujian untuk memastikan aplikasi aman dari potensi CSRF, yang dapat mengeksploitasi sesi pengguna yang sah untuk melakukan aksi yang tidak diinginkan.
 
 ### 5.2 Uji Coba Pengguna
-- Feedback dari pengguna akan digunakan untuk menyempurnakan sistem.
+Setelah pengujian teknis dilakukan, tahap selanjutnya adalah uji coba oleh pengguna. Pada tahap ini, sejumlah pengguna yang telah dipilih untuk menguji sistem memberikan feedback terkait pengalaman mereka dalam menggunakan aplikasi Julie Toys. Feedback tersebut mencakup berbagai aspek, seperti:
+
+- Kemudahan navigasi aplikasi.
+- Proses pembelian yang mudah dipahami.
+- Fitur yang dirasa kurang atau perlu diperbaiki.
+
+Hasil dari uji coba pengguna akan digunakan untuk menyempurnakan sistem agar lebih user-friendly, efisien, dan dapat memenuhi kebutuhan pengguna dengan lebih baik.
 
 ## BAB VI Penutupan
 
 ### 6.1 Kesimpulan
-Sistem Julie Toys adalah aplikasi e-commerce yang memfasilitasi jual beli mercun online dengan fitur-fitur utama seperti manajemen produk, laporan keuntungan, dan FAQ.
+Sistem Julie Toys adalah sebuah aplikasi e-commerce yang dirancang khusus untuk memfasilitasi proses jual beli mercun secara online. Aplikasi ini memiliki berbagai fitur utama yang bertujuan untuk memberikan pengalaman yang efisien dan memudahkan pengguna dalam bertransaksi, antara lain:
+
+- **Manajemen Produk**: Memungkinkan pengelolaan produk dengan mudah.
+- **Laporan Keuntungan**: Membantu pemilik bisnis untuk memantau performa keuangan.
+- **FAQ**: Memberikan informasi penting bagi pelanggan.
+
+Dengan sistem ini, diharapkan dapat meningkatkan kenyamanan, kecepatan, dan kemudahan bagi pengguna dalam berbelanja mercun, serta memberikan keuntungan yang maksimal bagi penjual.
 
 ### 6.2 Rencana Pengembangan
 - Integrasi pembayaran online.
