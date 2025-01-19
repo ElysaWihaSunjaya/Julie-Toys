@@ -86,13 +86,23 @@
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('member.dashboard') }}">Member Dashboard</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('manajemen_barang.index') }}">Manajemen Barang</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('cek_persediaan.index') }}">Cek Persediaan</a>
+                        </li>
                     @endif
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('daftar_barang.index') }}">Daftar Barang</a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('purchase-history.index') }}">Riwayat Pembelian</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('faqs.index') }}">FAQ</a>
                     </li>
+
                     @auth
                         <li class="nav-item">
                             <form action="{{ route('logout') }}" method="POST" style="display: inline;">

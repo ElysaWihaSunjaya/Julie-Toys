@@ -1,0 +1,39 @@
+body {
+    height: 100%;
+    font-family: 'Rubik', sans-serif;
+    align-items: center;
+}
+
+#imagePreview {
+    max-width: 200px;
+    height: auto;
+    display: block;
+    margin-top: 10px;
+}
+
+table{
+    margin-left: 2%;
+    width: 95%;
+}
+.button{
+    background-color: #3b82f6;
+    color: white;
+    border-radius: 4px;
+    margin-left: 2%;
+    padding: 4px 16px;
+}
+
+.edit{
+    background-color: #dfbf57;
+    color: white;
+    border-radius: 4px;
+    margin-left: 2%;
+    padding: 4px 16px;
+}
+
+.hapus{
+    background-color: red;
+    color: white;
+    border-radius: 4px;
+    padding: 4px 16px;
+}
