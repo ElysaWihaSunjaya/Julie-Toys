@@ -69,7 +69,9 @@
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
             <!-- Logo -->
-            <span class="navbar-brand">Julie-Toys</span>
+            <span class="navbar-brand">
+                <img src="{{ asset('image/foto 1.png') }}" class="d-block w-50 h-50">
+            </span>
             <!-- Hamburger Menu -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>

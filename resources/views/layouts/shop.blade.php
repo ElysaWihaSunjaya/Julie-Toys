@@ -161,7 +161,9 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
-            <span class="navbar-brand">JULIE-TOYS</span>
+            <span class="navbar-brand">
+                <img src="{{ asset('image/foto 1.png') }}" class="d-block w-50 h-50" >
+            </span>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -220,13 +222,13 @@
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="https://cdn.ruparupa.io/filters:format(webp)/promotion/toyskingdom/update-new-category-ah/level-1/pgbanner-mainan-koleksi.png" class="d-block w-100" alt="Banner 1">
+                <img src="{{ asset('image/foto toko 1.jpg') }}" class="d-block w-100" alt="Banner 1">
             </div>
             <div class="carousel-item">
-                <img src="https://images.pexels.com/photos/163036/mario-luigi-yoschi-figures-163036.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="d-block w-100" alt="Banner 2">
+                <img src="{{ asset('image/foto toko 2.jpg') }}" class="d-block w-100" alt="Banner 2">
             </div>
             <div class="carousel-item">
-                <img src="https://images.pexels.com/photos/189530/pexels-photo-189530.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="d-block w-100" alt="Banner 3">
+                <img src="{{ asset('image/foto toko 3.jpg') }}" class="d-block w-100" alt="Banner 3">
             </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
