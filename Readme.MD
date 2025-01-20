@@ -63,29 +63,21 @@ Julie Toys adalah toko mainan online yang dapat diakses melalui web. Sistem ini 
 **2.1.2 Antarmuka Pengguna**
 
 **Halaman Admin**
-|  |  |
-|--|--|
-| ![Deskripsi Gambar](https://github.com/ElysaWihaSunjaya/Julie-Toys/blob/ed9bd5e597cbd002fee191ec279abdd0901b418a/public/image/1.png)
- Halaman utama laravel untuk melakukan tahap login  dan juga register.| ![Deskripsi Gambar](https://github.com/ElysaWihaSunjaya/Julie-Toys/blob/ed9bd5e597cbd002fee191ec279abdd0901b418a/public/image/2.png)
-Halaman login untuk mengisi email dan password yg digunakan untuk mengakses halaman.
-|  |  |
-| ![Deskripsi Gambar 3](https://github.com/ElysaWihaSunjaya/Julie-Toys/blob/ed9bd5e597cbd002fee191ec279abdd0901b418a/public/image/3.png)
-Halaman utama yang menampilkan keterangan toko dan  juga lokasi toko dan juga navigasi untuk pindah ke halaman lainnya.| ![Deskripsi Gambar 4](https://github.com/ElysaWihaSunjaya/Julie-Toys/blob/ed9bd5e597cbd002fee191ec279abdd0901b418a/public/image/4.png)
- halaman produk yang akan menampilkan seluruh produk yg dijual beserta harganya.
-|  |  |
-| ![Deskripsi Gambar](https://github.com/ElysaWihaSunjaya/Julie-Toys/blob/ed9bd5e597cbd002fee191ec279abdd0901b418a/public/image/5.png)
- Halaman detail produk yang berisikan nama produk,harga,dan  juga deskripsi produk lainnya.|![Deskripsi Gambar](https://github.com/ElysaWihaSunjaya/Julie-Toys/blob/ed9bd5e597cbd002fee191ec279abdd0901b418a/public/image/6.png)
- Halaman untuk admin menambahkan produk baru yang akan dijual,dan terdapat kolom untuk menginputkan nama produk, harga, stok  barang, ketersediaan  barang, gambar dan juga deskkripsi produk.
-|  |  |
-|--|--|
-| ![Deskripsi Gambar](https://github.com/ElysaWihaSunjaya/Julie-Toys/blob/ed9bd5e597cbd002fee191ec279abdd0901b418a/public/image/7.png)
-Halaman laporan keuntungan yang menampilkan total keuntungan yang  didapatkan  beserta detail pembelian setiap produknya.|![Deskripsi Gambar](https://github.com/ElysaWihaSunjaya/Julie-Toys/blob/ed9bd5e597cbd002fee191ec279abdd0901b418a/public/image/8.png)
- Halaman riwayat pembelian yang menampilkan list produk yang sudah terjual, dan admin dapat melihat, edit, dan juga hapus detail  produk.
-|  |  |
-| ![alt text](img-laporan/9.png?raw=true)Halaman daftar member yg berisikan list akun pembeli.|![alt text](img-laporan/10.png?raw=true) Halaman  Faq (frequently asked question)berisikan pertanyaan2 dari pembeli yg ditanyakan kepada admin.
-|  |  |
-| ![alt text](img-laporan/11.png?raw=true) Halaman  untuk menambahkan  FAQ yg baru|![alt text](img-laporan/12.png?raw=true) Halaman untuk melakukan proses pembelian suatu  produk yang akan menginputklan nama produknya,harga,tanggal pembelian,jumlah barang,total harga dan juga rating.
-|  |  |
+| Gambar | Deskripsi |
+|--------|-----------|
+| ![Deskripsi Gambar](https://github.com/ElysaWihaSunjaya/Julie-Toys/blob/ed9bd5e597cbd002fee191ec279abdd0901b418a/public/image/1.png) | Halaman utama Laravel untuk melakukan tahap login dan juga register. |
+| ![Deskripsi Gambar](https://github.com/ElysaWihaSunjaya/Julie-Toys/blob/ed9bd5e597cbd002fee191ec279abdd0901b418a/public/image/2.png) | Halaman login untuk mengisi email dan password yang digunakan untuk mengakses halaman. |
+| ![Deskripsi Gambar 3](https://github.com/ElysaWihaSunjaya/Julie-Toys/blob/ed9bd5e597cbd002fee191ec279abdd0901b418a/public/image/3.png) | Halaman utama yang menampilkan keterangan toko dan juga lokasi toko serta navigasi untuk pindah ke halaman lainnya. |
+| ![Deskripsi Gambar 4](https://github.com/ElysaWihaSunjaya/Julie-Toys/blob/ed9bd5e597cbd002fee191ec279abdd0901b418a/public/image/4.png) | Halaman produk yang menampilkan seluruh produk yang dijual beserta harganya. |
+| ![Deskripsi Gambar](https://github.com/ElysaWihaSunjaya/Julie-Toys/blob/ed9bd5e597cbd002fee191ec279abdd0901b418a/public/image/5.png) | Halaman detail produk yang berisikan nama produk, harga, dan juga deskripsi produk lainnya. |
+| ![Deskripsi Gambar](https://github.com/ElysaWihaSunjaya/Julie-Toys/blob/ed9bd5e597cbd002fee191ec279abdd0901b418a/public/image/6.png) | Halaman untuk admin menambahkan produk baru yang akan dijual, dengan kolom untuk menginputkan nama produk, harga, stok barang, ketersediaan barang, gambar, dan juga deskripsi produk. |
+| ![Deskripsi Gambar](https://github.com/ElysaWihaSunjaya/Julie-Toys/blob/ed9bd5e597cbd002fee191ec279abdd0901b418a/public/image/7.png) | Halaman laporan keuntungan yang menampilkan total keuntungan yang didapatkan beserta detail pembelian setiap produknya. |
+| ![Deskripsi Gambar](https://github.com/ElysaWihaSunjaya/Julie-Toys/blob/ed9bd5e597cbd002fee191ec279abdd0901b418a/public/image/8.png) | Halaman riwayat pembelian yang menampilkan list produk yang sudah terjual, dan admin dapat melihat, mengedit, dan juga menghapus detail produk. |
+| ![Deskripsi Gambar](https://github.com/ElysaWihaSunjaya/Julie-Toys/blob/ed9bd5e597cbd002fee191ec279abdd0901b418a/public/image/9.png) | Halaman daftar member yang berisikan list akun pembeli. |
+| ![Deskripsi Gambar](https://github.com/ElysaWihaSunjaya/Julie-Toys/blob/ed9bd5e597cbd002fee191ec279abdd0901b418a/public/image/10.png) | Halaman FAQ (Frequently Asked Question) yang berisikan pertanyaan-pertanyaan dari pembeli yang ditanyakan kepada admin. |
+| ![Deskripsi Gambar](https://github.com/ElysaWihaSunjaya/Julie-Toys/blob/ed9bd5e597cbd002fee191ec279abdd0901b418a/public/image/11.png) | Halaman untuk menambahkan FAQ yang baru. |
+| ![Deskripsi Gambar](https://github.com/ElysaWihaSunjaya/Julie-Toys/blob/ed9bd5e597cbd002fee191ec279abdd0901b418a/public/image/12.png) | Halaman untuk melakukan proses pembelian suatu produk yang akan menginputkan nama produk, harga, tanggal pembelian, jumlah barang, total harga, dan juga rating. |
+
 
 ### **2.1.3 Antarmuka perangkat keras**
 ![Antarmuka Perangkat Keras](https://github.com/ElysaWihaSunjaya/Julie-Toys/blob/549723d1f781326fe2b1c27f13474a6b1d3f1cb1/img-laporan/Antarmuka%20perangkat%20keras.png)
