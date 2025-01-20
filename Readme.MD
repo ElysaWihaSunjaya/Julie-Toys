@@ -65,7 +65,8 @@ Julie Toys adalah toko mainan online yang dapat diakses melalui web. Sistem ini 
 **Halaman Admin**
 |  |  |
 |--|--|
-| ![alt text](img-laporan/1.png?raw=true) Halaman utama laravel untuk melakukan tahap login  dan juga register.| ![alt text](img-laporan/2.png?raw=true)Halaman login untuk mengisi email dan password yg digunakan untuk mengakses halaman.
+| ![Deskripsi Gambar](https://github.com/ElysaWihaSunjaya/Julie-Toys/blob/ed9bd5e597cbd002fee191ec279abdd0901b418a/public/image/1.png)
+ Halaman utama laravel untuk melakukan tahap login  dan juga register.| ![alt text](img-laporan/2.png?raw=true)Halaman login untuk mengisi email dan password yg digunakan untuk mengakses halaman.
 |  |  |
 | ![alt text](img-laporan/3.png?raw=true)Halaman utama yang menampilkan keterangan toko dan  juga lokasi toko dan juga navigasi untuk pindah ke halaman lainnya.| ![alt text](img-laporan/4.png?raw=true) halaman produk yang akan menampilkan seluruh produk yg dijual beserta harganya.
 |  |  |
