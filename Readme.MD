@@ -1,3 +1,5 @@
+![Alt Text](https://github.com/ElysaWihaSunjaya/Julie-Toys/blob/5a257bc643d320528d6021c81adc9c1e353965c8/public/image/cover.png?raw=true)
+
 # Software Requirement Specification (SRS) - Julie Toys
 
 ## BAB I Pendahuluan
